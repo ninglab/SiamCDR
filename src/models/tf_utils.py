@@ -90,7 +90,7 @@ class DataLoader( object ):
         info = info[info.index.isin(cell_lines)]
         return lambda x: info.loc[x, 'primary_disease']
 
-    def get_split(self, rna_path, forHinge=False):
+    def get_split(self, rna_path):
         # Load RNA data
         rna = pd.read_csv(rna_path, index_col='DepMap_ID')
         self.rna_dim = rna.shape[1]
@@ -99,10 +99,7 @@ class DataLoader( object ):
         # get the drug combinations for the defined cell lines
         combos = self.cdr[self.cdr.DepMap_ID.isin(cell_lines)]
         # get the labels and convert to TF tensor
-        if forHinge:
-            GT = tf.convert_to_tensor(np.where(combos.effective == 0., -1., 1.))
-        else:
-            GT = tf.convert_to_tensor(combos.effective, dtype=tf32)
+        GT = tf.convert_to_tensor(combos.effective, dtype=tf32)
         # get the drugs and RNA and conver each to TF tensor
         Drugs = tf.convert_to_tensor(self.drugs.loc[combos.name.values, :], dtype=tf32)
         self.drug_dim = Drugs.shape[1]

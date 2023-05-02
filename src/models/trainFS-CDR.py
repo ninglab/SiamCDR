@@ -186,7 +186,7 @@ def run(argv):
     loader = DataLoader(drug_path, cdr_path, info_path, drugsProcessed=True)
     for split, path in rna_paths.items():
         data[split] = {}
-        data[split]['rna'], data[split]['drug'], data[split]['GT'], cdrs[split] = loader.get_split(path, forHinge=True)
+        data[split]['rna'], data[split]['drug'], data[split]['GT'], cdrs[split] = loader.get_split(path)
     
     # Initialize full model
     model = fsCDR(**inputs['arch'])

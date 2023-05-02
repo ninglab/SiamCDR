@@ -11,14 +11,6 @@ from tensorflow.keras.optimizers.schedules import ExponentialDecay
 from tensorflow.keras.callbacks import ModelCheckpoint, EarlyStopping
 
 #### Define custom loss function
-def triplet_loss(self, y_true, y_pred, alpha=1.0):
-    anchor, positive, negative = y_pred[:, :self.nodeList[-1]],\
-                                y_pred[:, self.nodeList[-1]:2*self.nodeList[-1]],\
-                                y_pred[:, 2*self.nodeList[-1]:]
-    
-    posDist = tf.reduce_mean(tf.square(anchor - positive), axis=1)
-    negDist = tf.reduce_mean(tf.square(anchor - negative), axis=1)
-    return tf.maximum(posDist - negDist + alpha, 0.)
 
 #### Define classes
 class FewShotFusion():
@@ -56,14 +48,18 @@ class FewShotFusion():
 
         print("[INFO] building siamese network...")
         self._buildSiameseNet()
+ 
+    def triplet_loss(self, y_true, y_pred, alpha=1.0):
+        anchor, positive, negative = y_pred[:, :self.nodeList[-1]],\
+                                    y_pred[:, self.nodeList[-1]:2*self.nodeList[-1]],\
+                                    y_pred[:, 2*self.nodeList[-1]:]
+        
+        posDist = tf.reduce_mean(tf.square(anchor - positive), axis=1)
+        negDist = tf.reduce_mean(tf.square(anchor - negative), axis=1)
+        return tf.maximum(posDist - negDist + alpha, 0.)
 
     def _loadFeatureExtractor(self, modelPath):
-        if 'CellLine' in modelPath:
-            model = load_model(modelPath, 
-                              custom_objects={'triplet_loss': triplet_loss})
-        else:
-            model = load_model(modelPath)
-
+        model = load_model(modelPath)
         featureExtractor = model.get_layer("model")
         outputSize = featureExtractor.outputs[0].shape[-1]
         featureExtractor.trainable = False
@@ -166,7 +162,7 @@ class FewShotFusion():
                                     decay_rate=decayRate)
 
         opt = Adam(learning_rate=schedule)
-        self.siamese.compile(loss=triplet_loss, 
+        self.siamese.compile(loss=self.triplet_loss, 
                              optimizer=opt,
                              run_eagerly=True)
 
@@ -175,7 +171,7 @@ class FewShotFusion():
         stopEarly = EarlyStopping(monitor = 'loss',
                                   min_delta = 0.0001,
                                   patience = 10,
-                                  restore_best_weight = True)
+                                  restore_best_weights = True)
         callBacks.append(stopEarly)
 
         if saveModel & (modelPath != None):

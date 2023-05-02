@@ -4,6 +4,9 @@ from itertools import product
 
 from utils import createDirs
 
+# Define current dir
+fdir = os.path.dirname(__file__)
+
 # PARSER
 parser = argparse.ArgumentParser(description="""Script to initalize the submission of jobs to the queue
                                               for parameter tuning / training our FS-CDR model.
@@ -112,11 +115,15 @@ def get_flags_jobname(params: Vector, ext: str) -> "tuple[str, str]":
     return flags, job
 
 def submit_job(ext: str, job: str, flags: str, parent:str):
-    cmd = f'sbatch --job-name={ext}_{job}' # submit to sbatch queue
-    cmd += f" --output={parent}logs/{ext}_{job}.out" # where to save logfile
-    cmd += f' queueFS-CDR.sh {flags}' # which shell script and what flags should be passed to it
+    queuePath = os.path.join('./', fdir, 'queueFS-CDR.sh')
+    cmd = 'bash'
+    #  cmd = f'sbatch --job-name={ext}_{job}' # submit to sbatch queue
+    #  cmd += f" --output={parent}logs/{ext}_{job}.out" # where to save logfile
+    cmd += f' {queuePath} {flags}' # which shell script and what flags should be passed to it
     cmd = cmd.split(" ")
     subprocess.run(cmd)
+    #  print(cmd)
+    sys.exit()
 
 def parse_args(argv):
     args = parser.parse_args(argv)

@@ -4,6 +4,9 @@ from itertools import product
 
 from utils import createDirs
 
+# Define current dir
+fdir = os.path.dirname(__file__)
+
 # PARSER
 parser = argparse.ArgumentParser(description="""Script to initalize the submission of jobs to the queue
                                               for parameter tuning / training out Drug FewShot Feature Extractor.
@@ -96,10 +99,11 @@ def get_flags_jobname(params: Vector, ext: str) -> "tuple[str, str]":
     return flags, job
 
 def submit_job(ext: str, job: str, flags: str, parent:str):
+    queuePath = os.path.join('./', fdir, 'queueDrugEncoder.sh')
     #  cmd = 'bash'  # Use if want to test how command is being submitted
     cmd = f'sbatch --job-name={ext}_{job}' # submit to sbatch queue
     cmd += f" --output={parent}logs/{ext}_{job}.out" # where to save logfile
-    cmd += f' queueDrugFewShot.sh {flags}' # which shell script and what flags should be passed to it
+    cmd += f' {queuePath} {flags}' # which shell script and what flags should be passed to it
     #  print(cmd)
     cmd = cmd.split(" ")
     subprocess.run(cmd)

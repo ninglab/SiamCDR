@@ -7,8 +7,6 @@ from tensorflow.keras.layers import Input, Concatenate, Dense, Dropout
 from tensorflow.keras.optimizers.schedules import ExponentialDecay
 from tensorflow.keras.callbacks import ModelCheckpoint, EarlyStopping
 
-from contrastiveFusion import triplet_loss
-
 class fsCDR():
     def __init__(self, cellLineModelPath, drugModelPath, fusionModelPath,
                 nodeList, activation='relu', dropout=None):
@@ -17,19 +15,19 @@ class fsCDR():
                             'activation': activation}
         if dropout != None:
             self.buildParams['dropout'] = dropout
-        # cell line encoder  
+        # cell line encoder
+        self.cellLineInputDim = 463
         if cellLineModelPath == 'None':
             print("[INFO] cell line feature extractor not loaded. Using raw features...")
             self.cellLineExtractor = None
-            self.cellLineInputDim = 463
         else:
             print("[INFO] loading cell line feature extractor...")
             self.cellLineExtractor = self.loadFeatureExtractor(modelPath=cellLineModelPath)
             self.cellLineExtractor._name = 'cellLineExtractor'
             self.cellLineExtractor.trainable = False
-            self.cellLineInputDim = self.cellLineExtractor.inputs[0].get_shape()[-1]
         
         # Drug encoder
+        self.drugInputDim = 256
         if drugModelPath == 'None':
             print("[INFO] drug feature extractor not loaded. Using raw features...")
             self.drugExtractor = None
@@ -38,7 +36,6 @@ class fsCDR():
             self.drugExtractor = self.loadFeatureExtractor(modelPath=drugModelPath)
             self.drugExtractor._name = 'drugExtractor'
             self.drugExtractor.trainable = False
-            self.drugInputDim = self.drugExtractor.inputs[0].get_shape()[-1]
         
         # fusion encoder
         if fusionModelPath == 'None':
@@ -46,18 +43,27 @@ class fsCDR():
             self.fusionExtractor = None
         else:
             print("[INFO] loading fusion feature extractor...")
-            self.fusionExtractor = self.loadFeatureExtractor(modelPath=fusionModelPath)
+            self.fusionExtractor = self.loadFeatureExtractor(modelPath=fusionModelPath, fusion=True)
             self.fusionExtractor._name = 'fusionExtractor' 
             self.fusionExtractor.trainable = False
 
         print("[INFO] building CDR model...")
         self.buildModel(**self.buildParams)
 
+    def triplet_loss(self, y_true, y_pred, alpha=1.0):
+        embedDim = self.buildParams['nodeList'][-1]
+        anchor, positive, negative = y_pred[:, :embedDim],\
+                                    y_pred[:, embedDim:2*embedDim],\
+                                    y_pred[:, 2*embedDim:]
+        
+        posDist = tf.reduce_mean(tf.square(anchor - positive), axis=1)
+        negDist = tf.reduce_mean(tf.square(anchor - negative), axis=1)
+        return tf.maximum(posDist - negDist + alpha, 0.)
 
     def loadFeatureExtractor(self, modelPath, fusion=False):
         if fusion:
             featureExtractor = load_model(modelPath, 
-                                    custom_objects={'triplet_loss':triplet_loss})
+                                    custom_objects={'triplet_loss':self.triplet_loss})
         else:
             featureExtractor = load_model(modelPath)
         return featureExtractor.get_layer("model")

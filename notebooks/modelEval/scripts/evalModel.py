@@ -90,7 +90,7 @@ def clPrecision(preds, modelName=None, thresh=0.5, at=5, getResults=False, verbo
             print(f"\tPrecision@3: {round(np.mean(p3), 4)}")
             print(f"\tPrecision@4: {round(np.mean(p4), 4)}")
             print(f"\tPrecision@5: {round(np.mean(p5), 4)}")
-            print(f"\tPrecision@10: {round(np.mean(p0), 4)}\n\n")
+            print(f"\tPrecision@10: {round(np.mean(p0), 4)}\n")
         
     if getResults:
         return [np.mean(p1), np.mean(p2), np.mean(p3), np.mean(p4), np.mean(p5)]
@@ -98,9 +98,9 @@ def clPrecision(preds, modelName=None, thresh=0.5, at=5, getResults=False, verbo
     if verbose:
         return thresh
 
-def precision(preds, thresh=0.5, modelName=None, by='cellLine'):
+def precision(preds, thresh=0.5, at=5, modelName=None, by='cellLine'):
     if by == 'cellLine':
-        return clPrecision(preds, modelName, thresh=thresh)
+        return clPrecision(preds, modelName, at=at, thresh=thresh)
     else:
         cancers = {}
         for ct, subdf in preds.groupby(by = 'cancer_type'):
@@ -243,12 +243,14 @@ class evalLogisticModels():
         return Model(inputs=[drugInput, rnaInput], outputs=pairEmbed)
                                              
 
-    def evaluate(self, testDF, newDF=None, thresh=0.5, k=3, returnThresh=False):
+    def evaluate(self, testDF, newDF=None, modelName=None,
+                 thresh=0.5, k=3, at=1, returnThresh=False):
+        
         testDF['pred'] = [p[1] for p in self.lm.predict_proba(self.test)]
         testDF.sort_values(by='pred', ascending=False, inplace=True)
 
         if returnThresh:
-            thresh = precision(testDF, thresh=thresh, by='cellLine')
+            thresh = precision(testDF, modelName=modelName, thresh=thresh, at=at, by='cellLine')
             return thresh
         else:
             print('Average Cell Line precision @ k on test set')

@@ -4,6 +4,9 @@ from itertools import product
 
 from utils import createDirs
 
+# Define current dir
+fdir = os.path.dirname(__file__)
+
 # PARSER
 parser = argparse.ArgumentParser(description="""Script to initalize the submission of jobs to the queue
                                               for parameter tuning / training out CellLineFewShot Feature Extractor.
@@ -81,38 +84,40 @@ parser.add_argument(
 def get_parameter_sets(hypers):
     return list(product(*hypers))
 
-Vector = "list[tuple[str, float, str, float, int, float]]"
+Vector = "list[tuple[int, int, float, str, float, int, float]]"
 def get_flags_jobname(params: Vector, ext: str) -> "tuple[str, str]":
     #  Split parameter set into individual params
-    l, do, act, lr, ds, dr = params
+    l, n, do, act, lr, ds, dr = params
     
     #  Construct jobname
     mkStr = lambda x: str(x).replace('.','-')
-    job = f'NL{l}_DO{mkStr(do)}_AF{act}_LR{mkStr(lr)}_DR{mkStr(dr)}_DS{ds}'
+    job = f'Layers{l}_Hidden{n}_DO{mkStr(do)}_AF{act}_LR{mkStr(lr)}_DR{mkStr(dr)}_DS{ds}'
 
     #  Construct flags
-    flags = f"-l {l} -d {do} -a {act} -r {lr} -e {dr} -s {ds}"
+    flags = f"-l {l} -n {n} -d {do} -a {act} -r {lr} -e {dr} -s {ds}"
     flags += f" -o {ext}_{job}"
     return flags, job
 
 def submit_job(ext: str, job: str, flags: str, parent:str):
+    queuePath = os.path.join('./', fdir, 'queueCellLineEncoder.sh')
     cmd = f'sbatch --job-name={ext}_{job}' # submit to sbatch queue
     cmd += f" --output={parent}logs/{ext}_{job}.out" # where to save logfile
-    cmd += f' queueCellLineEncoder.sh {flags}' # which shell script and what flags should be passed to it
+    cmd += f' {queuePath} {flags}' # which shell script and what flags should be passed to it
     cmd = cmd.split(" ")
     subprocess.run(cmd)
 
 def parse_args(argv):
     args = parser.parse_args(argv)
 
-    nodeList = args.nodeList
+    layers = args.layers
+    n_hidden = args.n_hidden
     dropout = args.dropout
     activation = args.activation
     learning_rates = args.learning_rates
     decay_steps = args.decay_steps
     decay_rate = args.decay_rate
 
-    hypers = [nodeList, dropout, activation, 
+    hypers = [layers, n_hidden, dropout, activation, 
             learning_rates, decay_steps, decay_rate]
 
     if ~(args.parent.endswith('/')):

@@ -7,14 +7,21 @@
 #SBATCH --ntasks-per-node=1
 #SBATCH --gpus-per-node=1
 
-#SBATCH --mail-type=ALL
-#SBATCH	--mail-user=patrick.skillman-lawrence@osumc.edu
-
 ##### Main
+## Get script location to define training file path
+if [[ -n $SLURM_JOB_ID ]] ; then
+    SCRIPT_DIR=$(realpath $(dirname $(scontrol show job $SLURM_JOB_ID | awk -F= '/Command=/{print $2}' | cut -d" " -f1)))
+else
+    SCRIPT_DIR=$(dirname $(realpath $0))
+fi
+MODEL_DIR=${SCRIPT_DIR/Tuning/s}
+
+## define variables
 batch=32
 steps=1024
 epoch=250
 
+## register flags / arguments
 while getopts l:b:d:a:p:r:e:c:m:s:o: flag
 do
     case "${flag}" in
@@ -32,12 +39,13 @@ do
     esac
 done
 
+## submit job
 echo $out':'
 nodeList=${nodeList//'_'/' '}
-python ../models/trainFusionEncoder.py --nodeList ${nodeList}\
+python ${MODEL_DIR}/trainFusionEncoder.py --nodeList ${nodeList}\
                 --cellLineFewShot ${cellEncoder} --drugFewShot ${drugEncoder}\
                 --dropout ${dropout} --activation ${act} --learningRate ${lr}\
                 --decayRate ${dr} --decaySteps ${ds} --epochs ${epoch}\
                 --trainBy ${by} --batchSize ${batch} --stepsPerEpoch ${steps}\
                 --dir ${parent} --save True --out ${out}
-printf '\n\n\n'
+printf '\n\n'

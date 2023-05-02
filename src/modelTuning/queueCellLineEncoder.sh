@@ -8,10 +8,14 @@
 #SBATCH --gpus-per-node=1
 #SBATCH --mem=16gb
 
-#SBATCH --mail-type=ALL
-#SBATCH	--mail-user=patrick.skillman-lawrence@osumc.edu
-
 ##### Main
+if [[ -n $SLURM_JOB_ID ]] ; then
+    SCRIPT_DIR="${SLURM_SUBMIT_DIR}"
+else
+    SCRIPT_DIR=$(dirname $(realpath $0))
+fi
+MODEL_DIR=${SCRIPT_DIR/Tuning/s}
+
 batch=512
 epoch=1000
 patience=10
@@ -34,9 +38,9 @@ do
 done
 
 echo $out':'
-python ../models/trainCellEncoder.py --embeddingDim ${n_hidden} --nHiddenLayers ${layers}\
+python $MODEL_DIR/trainCellEncoder.py --embeddingDim ${n_hidden} --nHiddenLayers ${layers}\
                 --dropout ${dropout} --activation ${act} --learningRate ${lr}\
                 --decayRate ${dr} --decaySteps ${ds} --epochs ${epoch} --batchSize ${batch}\
                 --patience ${patience} --minDelta ${min_delta} --continuous ${cont}\
                 --dir ${parent} --save True --out ${out}
-printf '\n\n\n'
+printf '\n\n'
