@@ -8,7 +8,7 @@ from tensorflow.keras.models import Model, load_model
 from tensorflow.keras.optimizers import Adam
 from tensorflow.keras.layers import Input, Concatenate, Dense, Dropout 
 from tensorflow.keras.optimizers.schedules import ExponentialDecay
-from tensorflow.keras.callbacks import ModelCheckpoint
+from tensorflow.keras.callbacks import ModelCheckpoint, EarlyStopping
 
 #### Define custom loss function
 def triplet_loss(self, y_true, y_pred, alpha=1.0):
@@ -172,6 +172,12 @@ class FewShotFusion():
 
         print("[INFO] training model...")
         callBacks = []
+        stopEarly = EarlyStopping(monitor = 'loss',
+                                  min_delta = 0.0001,
+                                  patience = 10,
+                                  restore_best_weight = True)
+        callBacks.append(stopEarly)
+
         if saveModel & (modelPath != None):
             bestOnly = ModelCheckpoint(filepath = modelPath,
                                        monitor = 'loss',
