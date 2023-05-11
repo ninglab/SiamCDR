@@ -55,8 +55,8 @@ parser.add_argument(
     type=str,
     nargs="+",
     default=['64_32_16',  '64_32_8', '64_16_8', '32_16_8', 
-            '64_32', '64_16', '64_8', '32_16', '32_8',
-            '64', '32',  '64_64', '32_32', '16_16', ''],
+            '64_32', '64_16', '32_16', '64_64_64', '32_32_32', 
+            '16_16_16', '64', '32',  '64_64', '32_32', '16_16'],
     help='Number of nodes in each layer to test')
 parser.add_argument(
     "--activation",
@@ -116,14 +116,14 @@ def get_flags_jobname(params: Vector, ext: str) -> "tuple[str, str]":
 
 def submit_job(ext: str, job: str, flags: str, parent:str):
     queuePath = os.path.join('./', fdir, 'queueFS-CDR.sh')
-    cmd = 'bash'
-    #  cmd = f'sbatch --job-name={ext}_{job}' # submit to sbatch queue
-    #  cmd += f" --output={parent}logs/{ext}_{job}.out" # where to save logfile
+    #  cmd = 'bash'
+    cmd = f'sbatch --job-name={ext}_{job}' # submit to sbatch queue
+    cmd += f" --output={parent}logs/{ext}_{job}.out" # where to save logfile
     cmd += f' {queuePath} {flags}' # which shell script and what flags should be passed to it
     cmd = cmd.split(" ")
     subprocess.run(cmd)
     #  print(cmd)
-    sys.exit()
+    #  sys.exit()
 
 def parse_args(argv):
     args = parser.parse_args(argv)

@@ -10,7 +10,7 @@
 
 ##### Main
 if [[ -n $SLURM_JOB_ID ]] ; then
-    SCRIPT_DIR="${SLURM_SUBMIT_DIR}"
+    SCRIPT_DIR=$(realpath $(dirname $(scontrol show job $SLURM_JOB_ID | awk -F= '/Command=/{print $2}' | cut -d" " -f1)))
 else
     SCRIPT_DIR=$(dirname $(realpath $0))
 fi

@@ -35,7 +35,7 @@ class createDirs( object ):
 
         subPredDirs = ['train', 'val', 'test', 'newcancer']
         for d in subPredDirs:
-            paths[f"{d}_res"] = os.path.join(self.parent, f"{d}_preds")
+            paths[f"{d}_preds"] = os.path.join(self.parent, f"{d}_preds")
 
         return paths
     

@@ -2,14 +2,14 @@
 
 #SBATCH --account=PCON0041
 
-#SBATCH --time=08:00:00
+#SBATCH --time=02:00:00
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
 #SBATCH --gpus-per-node=1
 
 ##### Main
 if [[ -n $SLURM_JOB_ID ]] ; then
-    SCRIPT_DIR="${SLURM_SUBMIT_DIR}"
+    SCRIPT_DIR=$(realpath $(dirname $(scontrol show job $SLURM_JOB_ID | awk -F= '/Command=/{print $2}' | cut -d" " -f1)))
 else
     SCRIPT_DIR=$(dirname $(realpath $0))
 fi

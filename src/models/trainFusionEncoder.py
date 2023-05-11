@@ -3,6 +3,8 @@ import argparse, os, sys, timeit
 import numpy as np
 import pandas as pd
 
+from tensorflow.keras import backend as K
+
 from datetime import datetime
 get_time = datetime.now
 
@@ -180,8 +182,9 @@ def run(argv):
     print(f'[INFO] {get_time()}: training data saved...')
      
     stop = timeit.default_timer()
-    print('{1}: Runtime = {0}'.format(stop - start, get_time()))
+    print('{1}: Runtime = {0}hr'.format(round((stop - start)/60/60, 4), get_time()))
     sys.stdout.flush()
+    K.clear_session()
 
 if __name__ == '__main__':
     run(sys.argv[1:])

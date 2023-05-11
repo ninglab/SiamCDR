@@ -215,7 +215,7 @@ def run(argv):
         if split in ['train', 'val']:
             evaluator.evalPerformance(input_data, cdr, cancer_type, metrics, res_out, save_preds=False)
         else:
-            pred_out = os.path.join(inputs['out']['paths'][split+'_pred'], inputs['out']['fname'])
+            pred_out = os.path.join(inputs['out']['paths'][split+'_preds'], inputs['out']['fname'])
             evaluator.evalPerformance(input_data, cdr, cancer_type, metrics, res_out, pred_out, save_preds=True)
 
     # save average performance of k fold cross validation
