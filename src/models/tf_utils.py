@@ -11,43 +11,6 @@ from tensorflow.keras.losses import Loss
 #### DEFINE CONSTANTS
 file_dir = os.path.dirname(__file__)
 
-#### Define functions
-# RBM creation
-# Weight initalizers
-xavier = tf.keras.initializers.GlorotUniform()
-bias = tf.zeros_initializer()
-
-def xavier_init(shape, name):
-    return tf.Variable(initial_value=xavier(shape=shape, dtype=tf32), trainable=True, name=name)
-
-def random_nonneg_init(shape, name=None):
-    random = tf.keras.initializers.RandomUniform(minval=0., maxval=1.)
-    return tf.Variable(initial_value=random(shape=shape, dtype=tf32), trainable=True, name=name)
-
-def bias_init(shape, name):
-    return tf.Variable(initial_value=bias(shape=shape, dtype=tf32), trainable=True, name=name)
-
-def random_init(shape, name):
-    random = tf.keras.initializers.RandomUniform(minval=-1, maxval=1.)
-    return tf.Variable(initial_value=random(shape=shape, dtype=tf32), trainable=True, name=name)
-
-
-# RBM sampling
-def sample_bernoulli(ps):
-    return tf.nn.relu(tf.sign(ps - random_nonneg_init(shape=tf.shape(ps), name=None)))
-
-def sample_gaus(x, sigma):
-    return tf.random.normal(tf.shape(x), mean=x, stddev=sigma, dtype=tf32)
-
-# Get hidden mean and covariance nodes
-def compute_mean(x, w, b):
-    return tf.nn.sigmoid(tf.linalg.matmul(x, w) + b)
-
-def compute_cov(x, c, p, cb):
-    feat_fac = tf.math.square(tf.linalg.matmul(x, c))
-    feat_cov = tf.linalg.matmul(feat_fac, tf.transpose(p)) + cb
-    return tf.nn.sigmoid(feat_cov)
-
 #### Define classes
 # Load data
 class DataLoader( object ):

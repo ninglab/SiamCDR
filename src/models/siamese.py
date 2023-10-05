@@ -11,16 +11,18 @@ from tensorflow.keras.callbacks import ModelCheckpoint, EarlyStopping
 
 class SiameseNeuralNet():
     def __init__(self, inputShape, nHiddenLayers, embeddingDim, 
-                 activation=None, dropout=None, continuous=False):
+                  activation=None, dropout=None, continuous=False):
         # Create dict to call build funct
         self.buildParams = {'inputShape': inputShape,
                             'nHiddenLayers': nHiddenLayers,
                             'embeddingDim': embeddingDim}
+
         if activation != None:
             self.buildParams['activation'] = activation
         if dropout != None:
             self.buildParams['dropout'] = dropout
-       
+              
+        # Continuous allows for regression predicition of CDR vs classification
         self.continuous = continuous
 
         print("[INFO] building feature extractor...")
@@ -74,6 +76,7 @@ class SiameseNeuralNet():
         data = pd.read_csv(dataPath).to_numpy()
         np.random.shuffle(data)
         
+        # If validation data not predefined, then use random 5% of training
         if valPath == None:
             valSize = floor(len(data)*0.05)
 
@@ -107,6 +110,7 @@ class SiameseNeuralNet():
 
         opt = Adam(learning_rate=schedule)
 
+        # Allows for regression predicition of CDR vs classification
         if self.continuous:
             lossFunc = 'mean_squared_error'
         else:

@@ -1,0 +1,806 @@
+Cancer type,Cell line,Drug count,Mean rank,Max rank,Top drug,Mean rank,Max rank,Top drug
+Bladder Cancer,ACH-000127,3,22.33,6,doxorubicin,89.33,5,valrubicin
+Bladder Cancer,ACH-000486,3,22.33,6,doxorubicin,70.33,7,valrubicin
+Bladder Cancer,ACH-000522,3,22.33,6,doxorubicin,75.0,13,valrubicin
+Bladder Cancer,ACH-000547,3,22.33,6,doxorubicin,49.33,21,valrubicin
+Bladder Cancer,ACH-000834,3,22.0,5,doxorubicin,59.0,15,valrubicin
+Bladder Cancer,ACH-000896,3,22.33,6,doxorubicin,84.33,23,valrubicin
+Bladder Cancer,ACH-001183,3,22.33,6,doxorubicin,78.33,24,valrubicin
+Bladder Cancer,ACH-001407,3,22.0,5,doxorubicin,123.0,28,doxorubicin
+Bladder Cancer,ACH-001408,3,22.0,5,doxorubicin,100.0,22,valrubicin
+Bladder Cancer,ACH-001409,3,22.33,6,doxorubicin,131.0,25,valrubicin
+Bladder Cancer,ACH-001410,3,22.33,6,doxorubicin,106.67,25,valrubicin
+Bladder Cancer,ACH-001411,3,21.67,5,doxorubicin,119.0,28,doxorubicin
+Bladder Cancer,ACH-001412,3,22.33,6,doxorubicin,130.67,16,doxorubicin
+Bladder Cancer,ACH-001413,3,22.33,6,doxorubicin,119.0,20,doxorubicin
+Bladder Cancer,ACH-001414,3,22.0,5,doxorubicin,105.67,26,valrubicin
+Bladder Cancer,ACH-001415,3,22.0,5,doxorubicin,125.67,32,doxorubicin
+Bladder Cancer,ACH-001416,3,22.33,6,doxorubicin,115.33,22,doxorubicin
+Breast Cancer,ACH-000017,17,133.0,2,docetaxel,176.06,3,gemcitabine
+Breast Cancer,ACH-000028,17,133.47,2,paclitaxel,167.76,3,gemcitabine
+Breast Cancer,ACH-000044,17,132.76,2,paclitaxel,195.18,3,gemcitabine
+Breast Cancer,ACH-000111,17,133.47,2,docetaxel,161.47,3,gemcitabine
+Breast Cancer,ACH-000148,17,133.29,2,docetaxel,169.94,3,gemcitabine
+Breast Cancer,ACH-000196,17,133.0,2,docetaxel,150.59,3,gemcitabine
+Breast Cancer,ACH-000248,17,133.18,2,docetaxel,179.12,3,gemcitabine
+Breast Cancer,ACH-000258,17,132.82,2,paclitaxel,132.88,4,gemcitabine
+Breast Cancer,ACH-000330,17,132.82,2,docetaxel,175.12,3,gemcitabine
+Breast Cancer,ACH-000349,17,133.65,2,paclitaxel,165.35,3,gemcitabine
+Breast Cancer,ACH-000536,17,133.18,2,docetaxel,182.29,2,gemcitabine
+Breast Cancer,ACH-000554,17,132.59,2,docetaxel,137.41,3,gemcitabine
+Breast Cancer,ACH-000568,17,133.06,2,docetaxel,167.29,3,gemcitabine
+Breast Cancer,ACH-000573,17,133.12,2,docetaxel,162.24,3,gemcitabine
+Breast Cancer,ACH-000621,17,133.35,2,docetaxel,156.53,3,gemcitabine
+Breast Cancer,ACH-000668,17,133.0,2,paclitaxel,165.76,3,gemcitabine
+Breast Cancer,ACH-000691,17,133.12,2,docetaxel,157.12,4,gemcitabine
+Breast Cancer,ACH-000699,17,133.24,2,docetaxel,160.47,2,gemcitabine
+Breast Cancer,ACH-000721,17,133.06,2,docetaxel,160.18,2,gemcitabine
+Breast Cancer,ACH-000725,17,132.94,2,paclitaxel,167.53,2,gemcitabine
+Breast Cancer,ACH-000755,17,133.0,2,paclitaxel,171.71,3,gemcitabine
+Breast Cancer,ACH-000768,17,133.12,2,docetaxel,158.53,3,gemcitabine
+Breast Cancer,ACH-000818,17,133.29,2,docetaxel,145.06,4,gemcitabine
+Breast Cancer,ACH-000828,17,132.76,2,paclitaxel,159.41,3,gemcitabine
+Breast Cancer,ACH-000857,17,133.12,2,docetaxel,165.71,3,gemcitabine
+Breast Cancer,ACH-000859,17,133.41,2,paclitaxel,152.53,2,gemcitabine
+Breast Cancer,ACH-000876,17,133.41,2,paclitaxel,185.18,2,gemcitabine
+Breast Cancer,ACH-000902,17,132.94,2,docetaxel,139.24,3,gemcitabine
+Breast Cancer,ACH-000910,17,132.59,2,paclitaxel,156.53,2,gemcitabine
+Breast Cancer,ACH-000930,17,133.06,2,docetaxel,152.24,3,gemcitabine
+Breast Cancer,ACH-000934,17,133.0,2,docetaxel,189.59,2,gemcitabine
+Breast Cancer,ACH-001388,17,133.18,2,paclitaxel,165.35,2,gemcitabine
+Breast Cancer,ACH-001389,17,133.06,2,docetaxel,167.0,1,gemcitabine
+Breast Cancer,ACH-001390,17,133.24,2,docetaxel,179.47,2,gemcitabine
+Breast Cancer,ACH-001391,17,133.41,2,docetaxel,174.82,2,gemcitabine
+Breast Cancer,ACH-001392,17,133.41,2,paclitaxel,147.24,2,gemcitabine
+Breast Cancer,ACH-001393,17,133.53,2,docetaxel,138.41,4,gemcitabine
+Breast Cancer,ACH-001394,17,133.41,2,docetaxel,191.0,2,gemcitabine
+Breast Cancer,ACH-001395,17,132.94,2,paclitaxel,169.24,3,gemcitabine
+Breast Cancer,ACH-001396,17,133.41,2,paclitaxel,161.65,3,gemcitabine
+Breast Cancer,ACH-001419,17,133.06,2,docetaxel,171.29,2,gemcitabine
+Breast Cancer,ACH-001819,17,133.71,2,paclitaxel,139.53,2,gemcitabine
+Breast Cancer,ACH-001820,17,133.0,2,docetaxel,167.35,4,gemcitabine
+Cervical Cancer,ACH-000490,1,10.0,10,topotecan,62.0,62,topotecan
+Cervical Cancer,ACH-000556,1,10.0,10,topotecan,65.0,65,topotecan
+Cervical Cancer,ACH-001086,1,10.0,10,topotecan,93.0,93,topotecan
+Cervical Cancer,ACH-001333,1,10.0,10,topotecan,50.0,50,topotecan
+Cervical Cancer,ACH-001334,1,10.0,10,topotecan,45.0,45,topotecan
+Cervical Cancer,ACH-001335,1,10.0,10,topotecan,180.0,180,topotecan
+Cervical Cancer,ACH-001336,1,10.0,10,topotecan,50.0,50,topotecan
+Cervical Cancer,ACH-001341,1,10.0,10,topotecan,48.0,48,topotecan
+Cervical Cancer,ACH-001360,1,10.0,10,topotecan,59.0,59,topotecan
+Cervical Cancer,ACH-001400,1,10.0,10,topotecan,197.0,197,topotecan
+Cervical Cancer,ACH-001402,1,10.0,10,topotecan,56.0,56,topotecan
+Cervical Cancer,ACH-001451,1,10.0,10,topotecan,188.0,188,topotecan
+Cervical Cancer,ACH-001513,1,10.0,10,topotecan,83.0,83,topotecan
+Cervical Cancer,ACH-001515,1,10.0,10,topotecan,110.0,110,topotecan
+Cervical Cancer,ACH-001516,1,10.0,10,topotecan,101.0,101,topotecan
+Cervical Cancer,ACH-001525,1,10.0,10,topotecan,311.0,311,topotecan
+Cervical Cancer,ACH-001650,1,10.0,10,topotecan,61.0,61,topotecan
+Cervical Cancer,ACH-002019,1,10.0,10,topotecan,130.0,130,topotecan
+Colon/Colorectal Cancer,ACH-000003,9,183.33,11,irinotecan,264.44,15,SN-38
+Colon/Colorectal Cancer,ACH-000009,9,182.67,12,irinotecan,228.78,15,SN-38
+Colon/Colorectal Cancer,ACH-000089,9,183.89,11,irinotecan,185.56,15,SN-38
+Colon/Colorectal Cancer,ACH-000202,9,182.78,11,irinotecan,236.44,16,SN-38
+Colon/Colorectal Cancer,ACH-000236,9,183.67,11,irinotecan,236.56,16,SN-38
+Colon/Colorectal Cancer,ACH-000249,9,183.78,11,irinotecan,255.78,14,SN-38
+Colon/Colorectal Cancer,ACH-000253,9,183.56,11,irinotecan,214.44,12,SN-38
+Colon/Colorectal Cancer,ACH-000286,9,183.67,11,irinotecan,235.44,10,SN-38
+Colon/Colorectal Cancer,ACH-000342,9,183.89,11,irinotecan,240.11,16,SN-38
+Colon/Colorectal Cancer,ACH-000350,9,183.67,11,irinotecan,252.56,15,SN-38
+Colon/Colorectal Cancer,ACH-000360,9,183.22,11,irinotecan,206.78,16,SN-38
+Colon/Colorectal Cancer,ACH-000381,9,183.78,11,irinotecan,230.11,16,SN-38
+Colon/Colorectal Cancer,ACH-000400,9,183.22,10,irinotecan,237.89,16,SN-38
+Colon/Colorectal Cancer,ACH-000412,9,184.0,11,irinotecan,248.67,16,SN-38
+Colon/Colorectal Cancer,ACH-000421,9,183.78,11,irinotecan,251.44,15,SN-38
+Colon/Colorectal Cancer,ACH-000467,9,182.78,11,irinotecan,247.0,17,SN-38
+Colon/Colorectal Cancer,ACH-000470,9,183.11,11,irinotecan,226.56,18,SN-38
+Colon/Colorectal Cancer,ACH-000489,9,183.67,11,irinotecan,237.44,15,SN-38
+Colon/Colorectal Cancer,ACH-000491,9,183.89,11,irinotecan,237.89,14,SN-38
+Colon/Colorectal Cancer,ACH-000501,9,183.78,11,irinotecan,264.11,16,SN-38
+Colon/Colorectal Cancer,ACH-000651,9,184.11,11,irinotecan,213.67,18,SN-38
+Colon/Colorectal Cancer,ACH-000683,9,183.22,11,irinotecan,242.67,9,SN-38
+Colon/Colorectal Cancer,ACH-000708,9,183.11,11,irinotecan,250.67,14,SN-38
+Colon/Colorectal Cancer,ACH-000722,9,183.11,11,irinotecan,255.0,15,SN-38
+Colon/Colorectal Cancer,ACH-000798,9,183.67,11,irinotecan,228.56,16,SN-38
+Colon/Colorectal Cancer,ACH-000820,9,182.0,10,irinotecan,230.44,14,SN-38
+Colon/Colorectal Cancer,ACH-000935,9,183.78,11,irinotecan,207.44,16,SN-38
+Colon/Colorectal Cancer,ACH-000963,9,182.89,11,irinotecan,234.67,16,SN-38
+Colon/Colorectal Cancer,ACH-000969,9,183.67,11,irinotecan,238.67,18,SN-38
+Colon/Colorectal Cancer,ACH-000982,9,183.33,11,irinotecan,236.89,14,SN-38
+Colon/Colorectal Cancer,ACH-000986,9,183.78,11,irinotecan,255.67,16,SN-38
+Colon/Colorectal Cancer,ACH-000989,9,183.67,11,irinotecan,240.22,27,SN-38
+Colon/Colorectal Cancer,ACH-000998,9,183.0,11,irinotecan,221.33,14,SN-38
+Colon/Colorectal Cancer,ACH-000999,9,183.56,11,irinotecan,227.44,15,SN-38
+Colon/Colorectal Cancer,ACH-001061,9,183.0,11,irinotecan,256.67,27,SN-38
+Colon/Colorectal Cancer,ACH-001345,9,183.11,11,irinotecan,226.33,15,SN-38
+Colon/Colorectal Cancer,ACH-001399,9,183.78,11,irinotecan,231.78,17,SN-38
+Colon/Colorectal Cancer,ACH-001454,9,184.0,11,irinotecan,242.56,15,SN-38
+Colon/Colorectal Cancer,ACH-001456,9,183.78,11,irinotecan,251.44,16,SN-38
+Colon/Colorectal Cancer,ACH-001458,9,183.89,11,irinotecan,244.33,28,SN-38
+Colon/Colorectal Cancer,ACH-001459,9,183.33,11,irinotecan,254.56,15,SN-38
+Colon/Colorectal Cancer,ACH-001460,9,183.89,11,irinotecan,258.0,17,SN-38
+Colon/Colorectal Cancer,ACH-001461,9,183.33,11,irinotecan,230.33,16,SN-38
+Colon/Colorectal Cancer,ACH-001786,9,183.89,11,irinotecan,254.0,15,SN-38
+Colon/Colorectal Cancer,ACH-002023,9,183.89,11,irinotecan,229.56,16,SN-38
+Colon/Colorectal Cancer,ACH-002024,9,183.56,11,irinotecan,227.78,16,SN-38
+Colon/Colorectal Cancer,ACH-002025,9,183.78,11,irinotecan,249.78,19,SN-38
+Colon/Colorectal Cancer,ACH-002659,9,183.33,11,irinotecan,239.89,15,SN-38
+Colon/Colorectal Cancer,ACH-002664,9,183.78,11,irinotecan,240.89,14,SN-38
+Colon/Colorectal Cancer,ACH-002669,9,183.67,11,irinotecan,249.78,19,SN-38
+Endometrial/Uterine Cancer,ACH-000173,1,222.0,222,methotrexate,364.0,364,methotrexate
+Endometrial/Uterine Cancer,ACH-000293,1,223.0,223,methotrexate,345.0,345,methotrexate
+Endometrial/Uterine Cancer,ACH-000435,1,222.0,222,methotrexate,363.0,363,methotrexate
+Endometrial/Uterine Cancer,ACH-000831,1,222.0,222,methotrexate,334.0,334,methotrexate
+Endometrial/Uterine Cancer,ACH-000864,1,223.0,223,methotrexate,293.0,293,methotrexate
+Endometrial/Uterine Cancer,ACH-000928,1,223.0,223,methotrexate,326.0,326,methotrexate
+Endometrial/Uterine Cancer,ACH-000961,1,223.0,223,methotrexate,342.0,342,methotrexate
+Endometrial/Uterine Cancer,ACH-000978,1,222.0,222,methotrexate,327.0,327,methotrexate
+Endometrial/Uterine Cancer,ACH-000984,1,222.0,222,methotrexate,323.0,323,methotrexate
+Endometrial/Uterine Cancer,ACH-000993,1,222.0,222,methotrexate,333.0,333,methotrexate
+Endometrial/Uterine Cancer,ACH-001495,1,223.0,223,methotrexate,314.0,314,methotrexate
+Endometrial/Uterine Cancer,ACH-001517,1,222.0,222,methotrexate,329.0,329,methotrexate
+Endometrial/Uterine Cancer,ACH-001518,1,222.0,222,methotrexate,337.0,337,methotrexate
+Endometrial/Uterine Cancer,ACH-001529,1,222.0,222,methotrexate,342.0,342,methotrexate
+Endometrial/Uterine Cancer,ACH-001530,1,222.0,222,methotrexate,288.0,288,methotrexate
+Endometrial/Uterine Cancer,ACH-001651,1,222.0,222,methotrexate,326.0,326,methotrexate
+Endometrial/Uterine Cancer,ACH-001652,1,222.0,222,methotrexate,353.0,353,methotrexate
+Endometrial/Uterine Cancer,ACH-001655,1,222.0,222,methotrexate,367.0,367,methotrexate
+Endometrial/Uterine Cancer,ACH-002021,1,223.0,223,methotrexate,313.0,313,methotrexate
+Endometrial/Uterine Cancer,ACH-002026,1,222.0,222,methotrexate,338.0,338,methotrexate
+Endometrial/Uterine Cancer,ACH-002027,1,222.0,222,methotrexate,293.0,293,methotrexate
+Endometrial/Uterine Cancer,ACH-002046,1,222.0,222,methotrexate,360.0,360,methotrexate
+Gastric Cancer,ACH-000110,3,144.33,2,docetaxel,214.0,45,docetaxel
+Gastric Cancer,ACH-000144,3,144.33,2,docetaxel,214.0,21,docetaxel
+Gastric Cancer,ACH-000225,3,148.0,2,docetaxel,219.67,30,docetaxel
+Gastric Cancer,ACH-000239,3,145.0,2,docetaxel,152.33,29,docetaxel
+Gastric Cancer,ACH-000247,3,144.67,2,docetaxel,114.67,34,docetaxel
+Gastric Cancer,ACH-000255,3,144.67,2,docetaxel,123.33,8,docetaxel
+Gastric Cancer,ACH-000303,3,144.67,2,docetaxel,108.67,36,docetaxel
+Gastric Cancer,ACH-000325,3,144.67,2,docetaxel,212.67,33,docetaxel
+Gastric Cancer,ACH-000344,3,144.67,2,docetaxel,112.67,29,docetaxel
+Gastric Cancer,ACH-000351,3,144.67,2,docetaxel,153.0,23,docetaxel
+Gastric Cancer,ACH-000356,3,144.0,2,docetaxel,193.67,29,docetaxel
+Gastric Cancer,ACH-000466,3,144.67,2,docetaxel,148.33,8,docetaxel
+Gastric Cancer,ACH-000485,3,144.67,2,docetaxel,94.0,24,docetaxel
+Gastric Cancer,ACH-000507,3,144.67,2,docetaxel,113.33,31,docetaxel
+Gastric Cancer,ACH-000538,3,144.67,2,docetaxel,99.67,32,docetaxel
+Gastric Cancer,ACH-000560,3,145.0,3,docetaxel,189.0,18,docetaxel
+Gastric Cancer,ACH-000581,3,145.0,2,docetaxel,149.0,17,docetaxel
+Gastric Cancer,ACH-000616,3,144.67,2,docetaxel,188.0,17,docetaxel
+Gastric Cancer,ACH-000633,3,144.0,3,docetaxel,210.33,27,docetaxel
+Gastric Cancer,ACH-000674,3,145.33,2,docetaxel,200.33,17,docetaxel
+Gastric Cancer,ACH-000678,3,144.67,2,docetaxel,100.67,28,docetaxel
+Gastric Cancer,ACH-000736,3,144.67,2,docetaxel,127.0,22,docetaxel
+Gastric Cancer,ACH-000746,3,145.67,3,docetaxel,200.0,29,docetaxel
+Gastric Cancer,ACH-000761,3,145.33,2,docetaxel,183.33,15,docetaxel
+Gastric Cancer,ACH-000764,3,144.67,2,docetaxel,200.67,24,docetaxel
+Gastric Cancer,ACH-000793,3,144.67,2,docetaxel,123.0,24,docetaxel
+Gastric Cancer,ACH-000847,3,144.0,3,docetaxel,208.33,29,docetaxel
+Gastric Cancer,ACH-000880,3,145.0,2,docetaxel,95.0,14,docetaxel
+Gastric Cancer,ACH-000898,3,144.67,2,docetaxel,214.67,35,docetaxel
+Gastric Cancer,ACH-000908,3,144.67,2,docetaxel,103.67,29,docetaxel
+Gastric Cancer,ACH-000911,3,144.67,2,docetaxel,141.67,33,docetaxel
+Gastric Cancer,ACH-000919,3,144.67,2,docetaxel,147.67,19,docetaxel
+Gastric Cancer,ACH-000932,3,144.67,2,docetaxel,187.67,6,docetaxel
+Gastric Cancer,ACH-000948,3,143.67,2,docetaxel,232.33,43,docetaxel
+Gastric Cancer,ACH-000949,3,145.33,2,docetaxel,181.0,38,docetaxel
+Gastric Cancer,ACH-001653,3,144.67,2,docetaxel,118.33,37,docetaxel
+Gastric Cancer,ACH-001664,3,144.67,2,docetaxel,103.33,22,docetaxel
+Gastric Cancer,ACH-002446,3,145.33,2,docetaxel,171.67,14,docetaxel
+Gastric Cancer,ACH-002647,3,145.67,3,docetaxel,154.33,27,docetaxel
+Head and Neck Cancer,ACH-000181,2,169.0,2,docetaxel,31.0,23,docetaxel
+Head and Neck Cancer,ACH-000238,2,168.5,2,docetaxel,31.5,25,docetaxel
+Head and Neck Cancer,ACH-000254,2,169.0,2,docetaxel,28.0,19,docetaxel
+Head and Neck Cancer,ACH-000518,2,169.0,2,docetaxel,29.5,21,docetaxel
+Head and Neck Cancer,ACH-000546,2,169.0,2,docetaxel,34.0,24,docetaxel
+Head and Neck Cancer,ACH-000548,2,168.5,2,docetaxel,33.5,27,docetaxel
+Head and Neck Cancer,ACH-000606,2,168.5,2,docetaxel,38.5,31,hydroxyurea
+Head and Neck Cancer,ACH-000692,2,169.0,2,docetaxel,28.5,18,docetaxel
+Head and Neck Cancer,ACH-000715,2,169.0,2,docetaxel,31.0,25,docetaxel
+Head and Neck Cancer,ACH-000740,2,168.5,2,docetaxel,37.5,36,docetaxel
+Head and Neck Cancer,ACH-000794,2,169.0,2,docetaxel,36.5,34,hydroxyurea
+Head and Neck Cancer,ACH-000836,2,168.5,2,docetaxel,29.5,23,docetaxel
+Head and Neck Cancer,ACH-000846,2,169.0,2,docetaxel,33.0,29,docetaxel
+Head and Neck Cancer,ACH-001228,2,169.0,2,docetaxel,30.0,24,docetaxel
+Head and Neck Cancer,ACH-001229,2,168.5,2,docetaxel,36.5,28,docetaxel
+Head and Neck Cancer,ACH-001332,2,169.0,2,docetaxel,31.0,23,docetaxel
+Head and Neck Cancer,ACH-001346,2,169.0,2,docetaxel,31.5,24,docetaxel
+Head and Neck Cancer,ACH-001347,2,169.0,2,docetaxel,36.0,27,docetaxel
+Head and Neck Cancer,ACH-001385,2,169.5,3,docetaxel,27.0,18,docetaxel
+Head and Neck Cancer,ACH-001509,2,168.5,2,docetaxel,43.0,30,hydroxyurea
+Head and Neck Cancer,ACH-001510,2,169.0,2,docetaxel,35.0,31,docetaxel
+Head and Neck Cancer,ACH-001511,2,169.0,2,docetaxel,24.0,8,docetaxel
+Head and Neck Cancer,ACH-001542,2,169.5,3,docetaxel,33.5,27,docetaxel
+Head and Neck Cancer,ACH-001543,2,168.5,2,docetaxel,27.0,18,docetaxel
+Head and Neck Cancer,ACH-001625,2,169.0,2,docetaxel,33.5,29,docetaxel
+Head and Neck Cancer,ACH-001626,2,169.0,2,docetaxel,33.0,29,docetaxel
+Head and Neck Cancer,ACH-001641,2,168.5,2,docetaxel,34.5,30,docetaxel
+Head and Neck Cancer,ACH-001690,2,168.5,2,docetaxel,34.0,28,docetaxel
+Head and Neck Cancer,ACH-001692,2,168.5,2,docetaxel,31.5,17,docetaxel
+Head and Neck Cancer,ACH-001694,2,169.0,2,docetaxel,33.5,28,docetaxel
+Head and Neck Cancer,ACH-001696,2,168.5,2,docetaxel,33.0,26,docetaxel
+Head and Neck Cancer,ACH-001698,2,169.5,3,docetaxel,42.0,32,hydroxyurea
+Head and Neck Cancer,ACH-001699,2,169.0,2,docetaxel,34.0,32,docetaxel
+Head and Neck Cancer,ACH-001701,2,169.0,2,docetaxel,33.5,27,docetaxel
+Head and Neck Cancer,ACH-002029,2,168.5,2,docetaxel,32.0,24,docetaxel
+Head and Neck Cancer,ACH-002044,2,169.0,3,docetaxel,37.5,25,docetaxel
+Head and Neck Cancer,ACH-002045,2,169.0,2,docetaxel,42.5,37,hydroxyurea
+Kidney Cancer,ACH-000016,7,84.86,5,doxorubicin,172.43,10,temsirolimus
+Kidney Cancer,ACH-000046,7,84.86,6,doxorubicin,223.29,6,temsirolimus
+Kidney Cancer,ACH-000159,7,84.71,6,doxorubicin,183.71,11,temsirolimus
+Kidney Cancer,ACH-000171,7,84.71,5,doxorubicin,215.86,7,temsirolimus
+Kidney Cancer,ACH-000189,7,84.71,6,doxorubicin,218.86,8,temsirolimus
+Kidney Cancer,ACH-000234,7,84.57,5,doxorubicin,192.43,5,doxorubicin
+Kidney Cancer,ACH-000246,7,84.71,6,doxorubicin,200.29,9,temsirolimus
+Kidney Cancer,ACH-000250,7,84.86,6,doxorubicin,171.29,10,temsirolimus
+Kidney Cancer,ACH-000262,7,84.71,6,doxorubicin,203.57,5,doxorubicin
+Kidney Cancer,ACH-000272,7,84.71,6,doxorubicin,164.0,9,temsirolimus
+Kidney Cancer,ACH-000300,7,84.43,6,doxorubicin,205.14,12,temsirolimus
+Kidney Cancer,ACH-000313,7,84.86,5,doxorubicin,202.0,10,temsirolimus
+Kidney Cancer,ACH-000317,7,84.71,6,doxorubicin,215.71,7,temsirolimus
+Kidney Cancer,ACH-000375,7,84.86,6,doxorubicin,233.0,10,temsirolimus
+Kidney Cancer,ACH-000385,7,84.71,6,doxorubicin,179.29,10,temsirolimus
+Kidney Cancer,ACH-000411,7,84.71,6,doxorubicin,209.0,7,temsirolimus
+Kidney Cancer,ACH-000428,7,84.43,6,doxorubicin,219.86,8,temsirolimus
+Kidney Cancer,ACH-000433,7,84.57,5,doxorubicin,212.43,8,temsirolimus
+Kidney Cancer,ACH-000457,7,84.71,5,doxorubicin,184.29,11,temsirolimus
+Kidney Cancer,ACH-000459,7,84.71,6,doxorubicin,223.14,9,temsirolimus
+Kidney Cancer,ACH-000484,7,84.86,6,doxorubicin,243.43,11,temsirolimus
+Kidney Cancer,ACH-000495,7,84.57,5,doxorubicin,208.43,6,doxorubicin
+Kidney Cancer,ACH-000513,7,84.71,5,doxorubicin,194.29,10,temsirolimus
+Kidney Cancer,ACH-000555,7,84.57,5,doxorubicin,222.86,7,temsirolimus
+Kidney Cancer,ACH-000600,7,85.14,5,doxorubicin,230.29,7,temsirolimus
+Kidney Cancer,ACH-000649,7,84.57,6,doxorubicin,190.71,8,temsirolimus
+Kidney Cancer,ACH-000709,7,84.71,5,doxorubicin,204.0,6,temsirolimus
+Kidney Cancer,ACH-000907,7,84.71,6,doxorubicin,235.71,10,temsirolimus
+Kidney Cancer,ACH-001163,7,84.71,5,doxorubicin,206.71,12,temsirolimus
+Kidney Cancer,ACH-001194,7,84.86,6,doxorubicin,200.57,5,doxorubicin
+Kidney Cancer,ACH-001398,7,84.71,6,doxorubicin,217.0,12,temsirolimus
+Kidney Cancer,ACH-001687,7,84.57,6,doxorubicin,171.29,10,doxorubicin
+Kidney Cancer,ACH-001688,7,84.71,6,doxorubicin,202.29,11,temsirolimus
+Leukemia,ACH-000002,33,191.24,5,doxorubicin,177.64,9,idarubicin
+Leukemia,ACH-000004,33,190.64,6,doxorubicin,165.06,4,vincristine
+Leukemia,ACH-000005,33,191.27,6,doxorubicin,165.7,3,vincristine
+Leukemia,ACH-000006,33,190.79,6,doxorubicin,178.33,4,vincristine
+Leukemia,ACH-000020,33,190.55,6,doxorubicin,171.3,10,idarubicin
+Leukemia,ACH-000032,33,190.85,5,doxorubicin,184.3,2,mitoxantrone
+Leukemia,ACH-000034,33,190.91,6,doxorubicin,171.76,5,vincristine
+Leukemia,ACH-000045,33,190.64,6,doxorubicin,165.7,6,vincristine
+Leukemia,ACH-000059,33,191.09,6,doxorubicin,180.12,9,vincristine
+Leukemia,ACH-000065,33,190.73,5,doxorubicin,171.06,3,vincristine
+Leukemia,ACH-000070,33,190.67,6,doxorubicin,171.73,4,vincristine
+Leukemia,ACH-000072,33,190.79,6,doxorubicin,166.76,3,vincristine
+Leukemia,ACH-000074,33,191.03,6,doxorubicin,172.27,3,vincristine
+Leukemia,ACH-000076,33,190.97,5,doxorubicin,163.79,3,vincristine
+Leukemia,ACH-000080,33,190.7,6,doxorubicin,167.09,3,vincristine
+Leukemia,ACH-000081,33,191.48,6,doxorubicin,183.39,4,vincristine
+Leukemia,ACH-000084,33,191.24,6,doxorubicin,167.03,3,vincristine
+Leukemia,ACH-000101,33,190.91,5,doxorubicin,170.58,5,vincristine
+Leukemia,ACH-000104,33,190.91,4,doxorubicin,170.15,5,vincristine
+Leukemia,ACH-000105,33,191.06,6,doxorubicin,170.36,3,vincristine
+Leukemia,ACH-000112,33,190.82,6,doxorubicin,166.91,14,vincristine
+Leukemia,ACH-000113,33,191.27,6,doxorubicin,170.61,4,vincristine
+Leukemia,ACH-000122,33,190.67,5,doxorubicin,164.33,1,vincristine
+Leukemia,ACH-000130,33,190.82,6,doxorubicin,180.48,4,vincristine
+Leukemia,ACH-000146,33,191.06,5,doxorubicin,158.39,7,vincristine
+Leukemia,ACH-000151,33,190.55,6,doxorubicin,161.88,1,vincristine
+Leukemia,ACH-000156,33,190.97,6,doxorubicin,178.36,4,mitoxantrone
+Leukemia,ACH-000166,33,191.42,5,doxorubicin,162.24,3,vincristine
+Leukemia,ACH-000168,33,191.18,5,doxorubicin,165.42,3,vincristine
+Leukemia,ACH-000195,33,191.18,6,doxorubicin,166.21,7,vincristine
+Leukemia,ACH-000197,33,190.67,6,doxorubicin,188.79,3,mitoxantrone
+Leukemia,ACH-000198,33,191.24,5,doxorubicin,159.76,4,vincristine
+Leukemia,ACH-000218,33,190.88,6,doxorubicin,175.27,4,mitoxantrone
+Leukemia,ACH-000241,33,190.7,6,doxorubicin,187.64,3,mitoxantrone
+Leukemia,ACH-000263,33,191.27,6,doxorubicin,165.88,7,vincristine
+Leukemia,ACH-000294,33,190.82,5,doxorubicin,182.12,4,vincristine
+Leukemia,ACH-000295,33,190.79,5,doxorubicin,171.3,5,vincristine
+Leukemia,ACH-000299,33,191.18,6,doxorubicin,168.58,4,vincristine
+Leukemia,ACH-000301,33,190.79,6,doxorubicin,173.06,4,vincristine
+Leukemia,ACH-000321,33,191.64,6,doxorubicin,165.97,3,vincristine
+Leukemia,ACH-000326,33,190.7,6,doxorubicin,161.45,11,vincristine
+Leukemia,ACH-000336,33,190.91,5,doxorubicin,156.48,4,vincristine
+Leukemia,ACH-000346,33,190.7,6,doxorubicin,162.7,1,vincristine
+Leukemia,ACH-000362,33,190.94,6,doxorubicin,165.48,7,vincristine
+Leukemia,ACH-000369,33,191.0,6,doxorubicin,188.48,8,mitoxantrone
+Leukemia,ACH-000372,33,190.82,5,doxorubicin,181.45,2,mitoxantrone
+Leukemia,ACH-000373,33,190.88,6,doxorubicin,163.06,3,vincristine
+Leukemia,ACH-000386,33,191.52,5,doxorubicin,167.24,3,vincristine
+Leukemia,ACH-000387,33,190.91,6,doxorubicin,168.61,11,vincristine
+Leukemia,ACH-000405,33,190.55,5,doxorubicin,167.21,4,vincristine
+Leukemia,ACH-000406,33,191.33,5,doxorubicin,166.12,3,vincristine
+Leukemia,ACH-000432,33,190.76,7,doxorubicin,165.79,3,vincristine
+Leukemia,ACH-000439,33,191.45,5,doxorubicin,166.64,3,vincristine
+Leukemia,ACH-000462,33,191.18,6,doxorubicin,178.33,4,vincristine
+Leukemia,ACH-000487,33,190.55,6,doxorubicin,176.45,4,vincristine
+Leukemia,ACH-000492,33,190.76,6,doxorubicin,163.76,2,vincristine
+Leukemia,ACH-000498,33,190.91,6,doxorubicin,164.03,3,vincristine
+Leukemia,ACH-000519,33,191.39,6,doxorubicin,167.52,4,vincristine
+Leukemia,ACH-000551,33,190.58,6,doxorubicin,157.42,4,vincristine
+Leukemia,ACH-000557,33,191.33,6,doxorubicin,164.73,5,vincristine
+Leukemia,ACH-000602,33,190.97,6,doxorubicin,166.06,9,vincristine
+Leukemia,ACH-000604,33,190.94,5,doxorubicin,164.45,4,vincristine
+Leukemia,ACH-000636,33,191.06,5,doxorubicin,184.76,7,vincristine
+Leukemia,ACH-000641,33,191.12,5,doxorubicin,167.15,6,vincristine
+Leukemia,ACH-000728,33,190.64,6,doxorubicin,163.76,4,vincristine
+Leukemia,ACH-000751,33,190.67,6,doxorubicin,162.64,6,vincristine
+Leukemia,ACH-000770,33,191.0,5,doxorubicin,176.39,9,vincristine
+Leukemia,ACH-000782,33,191.09,5,doxorubicin,156.21,4,vincristine
+Leukemia,ACH-000874,33,191.06,6,doxorubicin,175.7,8,vincristine
+Leukemia,ACH-000918,33,191.58,5,doxorubicin,170.03,4,vincristine
+Leukemia,ACH-000920,33,191.27,4,doxorubicin,171.0,4,vincristine
+Leukemia,ACH-000922,33,190.82,6,doxorubicin,164.64,8,vincristine
+Leukemia,ACH-000937,33,191.15,6,doxorubicin,172.33,8,vincristine
+Leukemia,ACH-000938,33,191.24,6,doxorubicin,182.3,3,mitoxantrone
+Leukemia,ACH-000942,33,191.27,7,doxorubicin,183.03,4,vincristine
+Leukemia,ACH-000953,33,191.36,6,doxorubicin,169.27,4,vincristine
+Leukemia,ACH-000960,33,190.61,5,doxorubicin,176.85,4,vincristine
+Leukemia,ACH-000964,33,190.88,6,doxorubicin,179.73,4,vincristine
+Leukemia,ACH-000981,33,190.91,5,doxorubicin,171.58,5,vincristine
+Leukemia,ACH-000983,33,191.0,5,doxorubicin,166.61,3,vincristine
+Leukemia,ACH-000995,33,191.45,5,doxorubicin,175.61,9,idarubicin
+Leukemia,ACH-001036,33,191.33,5,doxorubicin,172.91,7,vincristine
+Leukemia,ACH-001106,33,190.94,6,doxorubicin,167.0,3,vincristine
+Leukemia,ACH-001129,33,191.15,5,doxorubicin,157.61,3,vincristine
+Leukemia,ACH-001484,33,190.73,6,doxorubicin,170.55,2,vincristine
+Leukemia,ACH-001485,33,190.73,6,doxorubicin,178.76,4,vincristine
+Leukemia,ACH-001520,33,190.7,6,doxorubicin,163.39,2,vincristine
+Leukemia,ACH-001573,33,191.55,6,doxorubicin,167.0,3,vincristine
+Leukemia,ACH-001574,33,190.88,6,doxorubicin,158.45,3,vincristine
+Leukemia,ACH-001577,33,191.24,5,doxorubicin,167.33,6,vincristine
+Leukemia,ACH-001613,33,190.91,5,doxorubicin,165.15,2,vincristine
+Leukemia,ACH-001618,33,191.39,7,doxorubicin,165.48,4,vincristine
+Leukemia,ACH-001634,33,190.85,7,doxorubicin,181.3,4,vincristine
+Leukemia,ACH-001647,33,190.76,6,doxorubicin,173.03,4,vincristine
+Leukemia,ACH-001656,33,191.06,6,doxorubicin,155.88,4,vincristine
+Leukemia,ACH-001669,33,190.55,5,doxorubicin,158.94,1,vincristine
+Leukemia,ACH-001707,33,191.21,6,doxorubicin,163.61,1,vincristine
+Leukemia,ACH-001735,33,190.94,5,doxorubicin,166.45,4,vincristine
+Leukemia,ACH-001736,33,190.73,5,doxorubicin,168.88,4,vincristine
+Leukemia,ACH-001737,33,191.15,5,doxorubicin,160.33,4,vincristine
+Leukemia,ACH-001993,33,190.85,6,doxorubicin,166.33,3,vincristine
+Leukemia,ACH-002059,33,191.21,5,doxorubicin,183.79,4,vincristine
+Leukemia,ACH-002061,33,190.67,6,doxorubicin,163.36,2,vincristine
+Leukemia,ACH-002475,33,191.18,4,doxorubicin,167.3,5,vincristine
+Liver Cancer,ACH-000316,1,118.0,118,sorafenib,347.0,347,sorafenib
+Liver Cancer,ACH-000422,1,118.0,118,sorafenib,349.0,349,sorafenib
+Liver Cancer,ACH-000475,1,119.0,119,sorafenib,327.0,327,sorafenib
+Liver Cancer,ACH-000478,1,118.0,118,sorafenib,309.0,309,sorafenib
+Liver Cancer,ACH-000483,1,118.0,118,sorafenib,264.0,264,sorafenib
+Liver Cancer,ACH-000493,1,118.0,118,sorafenib,210.0,210,sorafenib
+Liver Cancer,ACH-000577,1,118.0,118,sorafenib,259.0,259,sorafenib
+Liver Cancer,ACH-000686,1,119.0,119,sorafenib,283.0,283,sorafenib
+Liver Cancer,ACH-000739,1,119.0,119,sorafenib,263.0,263,sorafenib
+Lung Cancer,ACH-000012,19,134.42,2,docetaxel,177.37,3,gemcitabine
+Lung Cancer,ACH-000029,19,134.37,2,docetaxel,161.0,3,gemcitabine
+Lung Cancer,ACH-000033,19,134.42,2,docetaxel,183.42,3,gemcitabine
+Lung Cancer,ACH-000062,19,134.37,2,docetaxel,164.32,4,gemcitabine
+Lung Cancer,ACH-000086,19,134.37,2,docetaxel,181.95,3,gemcitabine
+Lung Cancer,ACH-000109,19,134.53,2,docetaxel,159.42,1,gemcitabine
+Lung Cancer,ACH-000121,19,134.37,2,docetaxel,168.63,3,gemcitabine
+Lung Cancer,ACH-000129,19,134.68,2,docetaxel,185.05,4,gemcitabine
+Lung Cancer,ACH-000143,19,134.95,2,docetaxel,163.47,2,gemcitabine
+Lung Cancer,ACH-000150,19,134.58,2,paclitaxel,146.53,3,gemcitabine
+Lung Cancer,ACH-000161,19,134.37,2,docetaxel,166.0,2,gemcitabine
+Lung Cancer,ACH-000179,19,134.37,2,docetaxel,153.74,2,gemcitabine
+Lung Cancer,ACH-000187,19,134.95,2,docetaxel,180.37,3,gemcitabine
+Lung Cancer,ACH-000251,19,133.79,2,docetaxel,177.26,3,gemcitabine
+Lung Cancer,ACH-000257,19,134.42,2,docetaxel,168.26,2,gemcitabine
+Lung Cancer,ACH-000282,19,134.74,2,docetaxel,172.53,3,gemcitabine
+Lung Cancer,ACH-000290,19,134.63,2,docetaxel,177.58,2,gemcitabine
+Lung Cancer,ACH-000297,19,134.68,2,docetaxel,149.53,2,gemcitabine
+Lung Cancer,ACH-000298,19,134.89,2,docetaxel,209.58,2,gemcitabine
+Lung Cancer,ACH-000314,19,134.37,2,docetaxel,166.89,3,gemcitabine
+Lung Cancer,ACH-000327,19,135.21,2,paclitaxel,159.74,2,gemcitabine
+Lung Cancer,ACH-000337,19,134.42,2,docetaxel,181.68,3,gemcitabine
+Lung Cancer,ACH-000339,19,134.37,2,docetaxel,170.47,1,gemcitabine
+Lung Cancer,ACH-000355,19,134.37,2,docetaxel,173.11,3,gemcitabine
+Lung Cancer,ACH-000358,19,134.42,2,docetaxel,239.47,2,gemcitabine
+Lung Cancer,ACH-000378,19,134.53,2,docetaxel,162.32,2,gemcitabine
+Lung Cancer,ACH-000379,19,134.37,2,paclitaxel,156.89,4,gemcitabine
+Lung Cancer,ACH-000382,19,134.68,2,docetaxel,155.53,2,gemcitabine
+Lung Cancer,ACH-000392,19,134.37,2,docetaxel,146.95,2,gemcitabine
+Lung Cancer,ACH-000394,19,134.47,2,docetaxel,190.42,4,gemcitabine
+Lung Cancer,ACH-000399,19,135.11,2,docetaxel,188.89,3,gemcitabine
+Lung Cancer,ACH-000431,19,134.42,2,docetaxel,161.53,2,gemcitabine
+Lung Cancer,ACH-000438,19,134.42,2,docetaxel,152.05,2,gemcitabine
+Lung Cancer,ACH-000442,19,134.47,2,docetaxel,167.53,3,gemcitabine
+Lung Cancer,ACH-000448,19,135.05,2,docetaxel,199.21,2,gemcitabine
+Lung Cancer,ACH-000451,19,134.89,2,docetaxel,162.74,2,gemcitabine
+Lung Cancer,ACH-000506,19,134.37,2,paclitaxel,141.0,2,gemcitabine
+Lung Cancer,ACH-000508,19,134.74,2,paclitaxel,169.37,3,gemcitabine
+Lung Cancer,ACH-000510,19,133.84,2,docetaxel,182.68,3,gemcitabine
+Lung Cancer,ACH-000511,19,134.37,2,docetaxel,170.68,2,gemcitabine
+Lung Cancer,ACH-000514,19,134.63,2,docetaxel,154.84,2,gemcitabine
+Lung Cancer,ACH-000515,19,134.32,2,docetaxel,197.26,3,gemcitabine
+Lung Cancer,ACH-000523,19,134.84,2,paclitaxel,167.21,2,gemcitabine
+Lung Cancer,ACH-000525,19,134.42,2,docetaxel,187.68,2,bortezomib
+Lung Cancer,ACH-000530,19,134.37,2,docetaxel,169.79,3,gemcitabine
+Lung Cancer,ACH-000559,19,134.47,2,paclitaxel,179.58,3,gemcitabine
+Lung Cancer,ACH-000563,19,134.68,2,docetaxel,180.16,2,gemcitabine
+Lung Cancer,ACH-000575,19,134.37,2,docetaxel,157.32,2,gemcitabine
+Lung Cancer,ACH-000578,19,134.47,2,docetaxel,153.63,2,gemcitabine
+Lung Cancer,ACH-000585,19,134.47,2,docetaxel,173.05,2,gemcitabine
+Lung Cancer,ACH-000586,19,134.74,2,docetaxel,165.26,2,gemcitabine
+Lung Cancer,ACH-000590,19,134.37,2,docetaxel,177.05,3,gemcitabine
+Lung Cancer,ACH-000594,19,135.05,2,docetaxel,162.11,2,gemcitabine
+Lung Cancer,ACH-000596,19,134.37,2,docetaxel,170.26,2,gemcitabine
+Lung Cancer,ACH-000610,19,134.42,2,docetaxel,154.68,3,gemcitabine
+Lung Cancer,ACH-000638,19,134.37,2,docetaxel,173.42,3,gemcitabine
+Lung Cancer,ACH-000639,19,134.37,2,docetaxel,173.37,3,gemcitabine
+Lung Cancer,ACH-000645,19,134.47,2,docetaxel,147.47,4,gemcitabine
+Lung Cancer,ACH-000659,19,134.37,2,docetaxel,180.32,3,gemcitabine
+Lung Cancer,ACH-000665,19,134.68,2,docetaxel,159.26,3,gemcitabine
+Lung Cancer,ACH-000675,19,134.68,2,docetaxel,196.05,3,gemcitabine
+Lung Cancer,ACH-000690,19,134.84,2,docetaxel,154.0,3,gemcitabine
+Lung Cancer,ACH-000695,19,134.63,2,docetaxel,191.32,3,gemcitabine
+Lung Cancer,ACH-000698,19,134.95,2,docetaxel,168.63,2,gemcitabine
+Lung Cancer,ACH-000700,19,134.47,2,docetaxel,175.37,3,gemcitabine
+Lung Cancer,ACH-000703,19,135.16,2,docetaxel,176.32,2,gemcitabine
+Lung Cancer,ACH-000705,19,134.53,2,docetaxel,193.16,2,gemcitabine
+Lung Cancer,ACH-000706,19,134.47,2,docetaxel,176.63,3,gemcitabine
+Lung Cancer,ACH-000710,19,134.53,2,paclitaxel,190.68,3,gemcitabine
+Lung Cancer,ACH-000712,19,134.89,2,docetaxel,160.16,2,gemcitabine
+Lung Cancer,ACH-000718,19,134.37,2,docetaxel,168.16,2,gemcitabine
+Lung Cancer,ACH-000729,19,134.53,2,docetaxel,187.84,3,gemcitabine
+Lung Cancer,ACH-000731,19,134.63,2,docetaxel,177.26,3,gemcitabine
+Lung Cancer,ACH-000737,19,134.16,2,paclitaxel,169.84,2,gemcitabine
+Lung Cancer,ACH-000743,19,134.79,2,docetaxel,165.21,2,gemcitabine
+Lung Cancer,ACH-000747,19,134.42,2,docetaxel,151.16,3,gemcitabine
+Lung Cancer,ACH-000749,19,135.05,2,docetaxel,170.68,2,gemcitabine
+Lung Cancer,ACH-000752,19,134.37,2,docetaxel,170.47,3,gemcitabine
+Lung Cancer,ACH-000757,19,134.47,2,docetaxel,146.84,4,gemcitabine
+Lung Cancer,ACH-000767,19,134.42,2,docetaxel,154.21,1,gemcitabine
+Lung Cancer,ACH-000779,19,134.37,2,docetaxel,171.79,3,gemcitabine
+Lung Cancer,ACH-000780,19,134.68,2,paclitaxel,158.32,2,gemcitabine
+Lung Cancer,ACH-000789,19,135.11,2,docetaxel,172.63,4,gemcitabine
+Lung Cancer,ACH-000790,19,134.37,2,docetaxel,223.63,2,gemcitabine
+Lung Cancer,ACH-000813,19,134.47,2,docetaxel,156.63,2,gemcitabine
+Lung Cancer,ACH-000816,19,134.37,2,docetaxel,159.53,2,gemcitabine
+Lung Cancer,ACH-000825,19,134.37,2,docetaxel,149.89,2,gemcitabine
+Lung Cancer,ACH-000830,19,134.37,2,docetaxel,175.16,2,gemcitabine
+Lung Cancer,ACH-000844,19,135.05,2,docetaxel,161.58,2,gemcitabine
+Lung Cancer,ACH-000851,19,133.37,2,docetaxel,155.0,2,gemcitabine
+Lung Cancer,ACH-000853,19,134.37,2,docetaxel,162.79,2,gemcitabine
+Lung Cancer,ACH-000860,19,134.37,2,docetaxel,171.0,3,gemcitabine
+Lung Cancer,ACH-000861,19,134.63,2,docetaxel,150.79,3,gemcitabine
+Lung Cancer,ACH-000867,19,135.0,2,docetaxel,175.26,3,gemcitabine
+Lung Cancer,ACH-000870,19,134.42,2,docetaxel,177.26,3,gemcitabine
+Lung Cancer,ACH-000871,19,134.53,2,docetaxel,189.05,2,gemcitabine
+Lung Cancer,ACH-000872,19,134.47,2,docetaxel,155.32,2,gemcitabine
+Lung Cancer,ACH-000893,19,134.95,2,docetaxel,166.37,4,gemcitabine
+Lung Cancer,ACH-000894,19,134.42,2,docetaxel,172.16,2,gemcitabine
+Lung Cancer,ACH-000904,19,134.32,2,docetaxel,172.89,4,gemcitabine
+Lung Cancer,ACH-000912,19,134.37,2,docetaxel,180.26,2,gemcitabine
+Lung Cancer,ACH-000925,19,134.68,2,docetaxel,160.79,2,gemcitabine
+Lung Cancer,ACH-000951,19,134.63,2,docetaxel,176.53,4,gemcitabine
+Lung Cancer,ACH-000975,19,134.68,2,docetaxel,150.95,2,gemcitabine
+Lung Cancer,ACH-000980,19,134.37,2,docetaxel,193.37,2,gemcitabine
+Lung Cancer,ACH-001386,19,134.37,2,docetaxel,175.89,3,gemcitabine
+Lung Cancer,ACH-001547,19,134.47,2,docetaxel,169.32,2,gemcitabine
+Lung Cancer,ACH-001549,19,134.42,2,docetaxel,165.84,4,gemcitabine
+Lung Cancer,ACH-001555,19,134.32,2,docetaxel,167.0,4,gemcitabine
+Lung Cancer,ACH-001556,19,134.37,2,docetaxel,156.89,3,gemcitabine
+Lung Cancer,ACH-001557,19,134.63,2,docetaxel,156.47,2,gemcitabine
+Lung Cancer,ACH-001558,19,134.84,2,docetaxel,151.95,2,gemcitabine
+Lung Cancer,ACH-001559,19,134.63,2,docetaxel,154.47,3,gemcitabine
+Lung Cancer,ACH-001560,19,134.47,2,docetaxel,170.32,2,gemcitabine
+Lung Cancer,ACH-001561,19,134.95,2,docetaxel,161.53,3,gemcitabine
+Lung Cancer,ACH-001562,19,134.68,2,docetaxel,154.63,2,gemcitabine
+Lung Cancer,ACH-001977,19,135.05,2,docetaxel,181.53,4,gemcitabine
+Lung Cancer,ACH-001992,19,134.63,2,docetaxel,169.11,3,gemcitabine
+Lymphoma,ACH-000038,12,176.83,6,doxorubicin,99.17,1,romidepsin
+Lymphoma,ACH-000053,12,176.33,5,doxorubicin,117.83,1,romidepsin
+Lymphoma,ACH-000056,12,177.75,4,romidepsin,101.83,2,romidepsin
+Lymphoma,ACH-000061,12,176.83,4,romidepsin,105.83,5,romidepsin
+Lymphoma,ACH-000068,12,176.0,6,doxorubicin,102.0,1,romidepsin
+Lymphoma,ACH-000069,12,176.0,6,doxorubicin,95.5,5,romidepsin
+Lymphoma,ACH-000073,12,176.83,6,doxorubicin,87.75,1,romidepsin
+Lymphoma,ACH-000077,12,176.33,5,doxorubicin,108.42,2,romidepsin
+Lymphoma,ACH-000106,12,176.58,4,doxorubicin,96.42,1,romidepsin
+Lymphoma,ACH-000124,12,176.08,5,romidepsin,92.0,1,romidepsin
+Lymphoma,ACH-000140,12,176.75,6,doxorubicin,101.08,5,romidepsin
+Lymphoma,ACH-000157,12,176.25,5,doxorubicin,93.92,1,romidepsin
+Lymphoma,ACH-000158,12,176.83,6,doxorubicin,112.17,7,romidepsin
+Lymphoma,ACH-000162,12,177.58,6,doxorubicin,104.67,5,romidepsin
+Lymphoma,ACH-000206,12,176.17,4,romidepsin,102.92,5,romidepsin
+Lymphoma,ACH-000220,12,176.58,6,doxorubicin,101.0,5,romidepsin
+Lymphoma,ACH-000226,12,176.83,6,doxorubicin,99.58,1,romidepsin
+Lymphoma,ACH-000233,12,176.75,6,doxorubicin,78.17,1,romidepsin
+Lymphoma,ACH-000245,12,176.92,5,romidepsin,101.25,5,romidepsin
+Lymphoma,ACH-000267,12,176.58,5,doxorubicin,117.17,7,romidepsin
+Lymphoma,ACH-000271,12,177.58,6,doxorubicin,98.17,1,romidepsin
+Lymphoma,ACH-000285,12,175.92,6,doxorubicin,113.25,7,romidepsin
+Lymphoma,ACH-000287,12,175.83,4,romidepsin,105.33,5,romidepsin
+Lymphoma,ACH-000315,12,176.17,5,doxorubicin,96.33,1,romidepsin
+Lymphoma,ACH-000334,12,177.08,4,romidepsin,108.92,2,romidepsin
+Lymphoma,ACH-000338,12,176.83,5,doxorubicin,121.58,1,romidepsin
+Lymphoma,ACH-000357,12,176.08,6,doxorubicin,109.58,7,romidepsin
+Lymphoma,ACH-000365,12,177.58,5,romidepsin,100.92,1,romidepsin
+Lymphoma,ACH-000371,12,178.08,5,romidepsin,103.58,4,romidepsin
+Lymphoma,ACH-000388,12,177.83,5,romidepsin,89.25,1,romidepsin
+Lymphoma,ACH-000398,12,176.0,6,doxorubicin,103.75,5,romidepsin
+Lymphoma,ACH-000402,12,177.75,5,romidepsin,97.17,5,romidepsin
+Lymphoma,ACH-000440,12,177.75,5,romidepsin,101.75,5,romidepsin
+Lymphoma,ACH-000509,12,176.25,5,doxorubicin,86.92,1,romidepsin
+Lymphoma,ACH-000534,12,177.58,6,doxorubicin,107.17,1,romidepsin
+Lymphoma,ACH-000567,12,175.75,5,doxorubicin,109.25,6,romidepsin
+Lymphoma,ACH-000583,12,175.92,5,doxorubicin,107.08,4,romidepsin
+Lymphoma,ACH-000611,12,177.25,5,romidepsin,96.75,5,romidepsin
+Lymphoma,ACH-000612,12,176.83,5,doxorubicin,116.67,1,romidepsin
+Lymphoma,ACH-000654,12,176.25,5,romidepsin,104.58,5,romidepsin
+Lymphoma,ACH-000656,12,176.75,6,doxorubicin,114.67,7,romidepsin
+Lymphoma,ACH-000660,12,177.0,5,romidepsin,112.17,4,romidepsin
+Lymphoma,ACH-000664,12,176.67,4,doxorubicin,103.0,1,romidepsin
+Lymphoma,ACH-000687,12,175.75,5,doxorubicin,99.5,5,romidepsin
+Lymphoma,ACH-000697,12,176.25,5,doxorubicin,98.92,1,romidepsin
+Lymphoma,ACH-000702,12,176.75,6,doxorubicin,97.83,5,romidepsin
+Lymphoma,ACH-000707,12,177.42,5,romidepsin,101.75,5,romidepsin
+Lymphoma,ACH-000754,12,176.67,5,doxorubicin,93.42,5,romidepsin
+Lymphoma,ACH-000773,12,176.92,6,doxorubicin,95.42,1,romidepsin
+Lymphoma,ACH-000786,12,176.58,4,romidepsin,104.42,5,romidepsin
+Lymphoma,ACH-000806,12,175.58,4,romidepsin,106.33,7,romidepsin
+Lymphoma,ACH-000815,12,177.92,6,doxorubicin,117.83,7,romidepsin
+Lymphoma,ACH-000877,12,176.25,5,doxorubicin,105.92,5,romidepsin
+Lymphoma,ACH-000914,12,176.08,6,doxorubicin,102.58,5,romidepsin
+Lymphoma,ACH-000923,12,175.58,5,doxorubicin,78.0,1,romidepsin
+Lymphoma,ACH-000944,12,176.0,5,romidepsin,108.33,7,romidepsin
+Lymphoma,ACH-001057,12,177.33,4,doxorubicin,96.83,1,romidepsin
+Lymphoma,ACH-001060,12,176.42,4,romidepsin,102.5,5,romidepsin
+Lymphoma,ACH-001068,12,178.25,4,romidepsin,110.25,5,romidepsin
+Lymphoma,ACH-001097,12,175.75,4,romidepsin,106.42,5,romidepsin
+Lymphoma,ACH-001100,12,176.83,6,doxorubicin,92.33,1,romidepsin
+Lymphoma,ACH-001111,12,176.5,5,doxorubicin,103.17,1,romidepsin
+Lymphoma,ACH-001119,12,176.75,6,doxorubicin,116.92,6,romidepsin
+Lymphoma,ACH-001132,12,175.67,4,romidepsin,111.42,1,romidepsin
+Lymphoma,ACH-001134,12,176.08,6,doxorubicin,108.92,6,romidepsin
+Lymphoma,ACH-001147,12,176.5,4,romidepsin,103.25,5,romidepsin
+Lymphoma,ACH-001148,12,176.58,4,romidepsin,105.83,6,romidepsin
+Lymphoma,ACH-001197,12,176.0,5,doxorubicin,98.92,5,romidepsin
+Lymphoma,ACH-001450,12,177.67,4,romidepsin,102.58,5,romidepsin
+Lymphoma,ACH-001498,12,177.42,5,romidepsin,102.92,5,romidepsin
+Lymphoma,ACH-001533,12,176.0,6,doxorubicin,107.5,5,romidepsin
+Lymphoma,ACH-001539,12,176.0,6,doxorubicin,80.42,1,romidepsin
+Lymphoma,ACH-001616,12,177.5,5,doxorubicin,99.83,1,romidepsin
+Lymphoma,ACH-001617,12,176.17,5,doxorubicin,112.17,7,romidepsin
+Lymphoma,ACH-001636,12,176.0,5,romidepsin,110.17,6,romidepsin
+Lymphoma,ACH-001638,12,176.08,4,doxorubicin,103.5,5,romidepsin
+Lymphoma,ACH-001642,12,176.75,6,doxorubicin,112.08,1,romidepsin
+Lymphoma,ACH-001677,12,176.33,5,doxorubicin,107.25,5,romidepsin
+Lymphoma,ACH-001685,12,177.0,6,doxorubicin,116.58,7,romidepsin
+Lymphoma,ACH-001703,12,177.58,5,romidepsin,103.0,5,romidepsin
+Lymphoma,ACH-001709,12,176.33,6,doxorubicin,113.92,4,romidepsin
+Lymphoma,ACH-002055,12,177.0,6,doxorubicin,106.5,5,romidepsin
+Lymphoma,ACH-002062,12,176.83,6,doxorubicin,112.92,7,romidepsin
+Myeloma,ACH-000024,9,144.22,5,doxorubicin,65.0,6,ixazomib-citrate
+Myeloma,ACH-000050,9,142.89,6,doxorubicin,64.67,7,ixazomib-citrate
+Myeloma,ACH-000057,9,144.11,6,doxorubicin,81.0,5,ixazomib-citrate
+Myeloma,ACH-000167,9,143.89,6,doxorubicin,80.0,6,ixazomib-citrate
+Myeloma,ACH-000183,9,144.0,6,doxorubicin,73.33,5,ixazomib-citrate
+Myeloma,ACH-000193,9,142.11,5,doxorubicin,76.78,6,ixazomib-citrate
+Myeloma,ACH-000204,9,143.89,5,doxorubicin,75.56,5,ixazomib-citrate
+Myeloma,ACH-000363,9,144.11,6,doxorubicin,71.44,4,bortezomib
+Myeloma,ACH-000380,9,143.78,6,doxorubicin,81.22,5,ixazomib-citrate
+Myeloma,ACH-000419,9,142.44,5,doxorubicin,65.11,6,ixazomib-citrate
+Myeloma,ACH-000436,9,142.22,5,doxorubicin,64.67,6,bortezomib
+Myeloma,ACH-000453,9,143.67,6,doxorubicin,74.11,7,ixazomib-citrate
+Myeloma,ACH-000512,9,144.0,6,doxorubicin,76.78,7,ixazomib-citrate
+Myeloma,ACH-000541,9,144.44,6,doxorubicin,75.11,5,ixazomib-citrate
+Myeloma,ACH-000564,9,142.22,7,doxorubicin,59.22,6,ixazomib-citrate
+Myeloma,ACH-000576,9,142.89,7,doxorubicin,66.33,11,ixazomib-citrate
+Myeloma,ACH-000588,9,144.11,6,doxorubicin,77.44,5,ixazomib-citrate
+Myeloma,ACH-000598,9,142.22,5,doxorubicin,84.11,8,ixazomib-citrate
+Myeloma,ACH-000626,9,143.0,4,doxorubicin,83.33,7,ixazomib-citrate
+Myeloma,ACH-000653,9,142.22,5,doxorubicin,76.56,6,ixazomib-citrate
+Myeloma,ACH-000714,9,143.22,6,doxorubicin,78.33,5,ixazomib-citrate
+Myeloma,ACH-000745,9,143.0,6,doxorubicin,66.0,9,ixazomib-citrate
+Myeloma,ACH-000763,9,143.89,6,doxorubicin,76.11,5,ixazomib-citrate
+Myeloma,ACH-000817,9,142.11,5,doxorubicin,77.22,5,ixazomib-citrate
+Myeloma,ACH-000821,9,144.11,6,doxorubicin,80.78,6,ixazomib-citrate
+Myeloma,ACH-000829,9,143.78,6,doxorubicin,68.0,7,ixazomib
+Myeloma,ACH-000838,9,141.78,6,doxorubicin,80.78,6,ixazomib-citrate
+Myeloma,ACH-000854,9,142.33,5,doxorubicin,69.0,6,ixazomib-citrate
+Myeloma,ACH-000889,9,142.0,5,doxorubicin,62.89,8,ixazomib-citrate
+Myeloma,ACH-001541,9,143.0,6,doxorubicin,65.67,6,ixazomib-citrate
+Neuroblastoma,ACH-000078,1,270.0,270,cyclophosphamide,43.0,43,cyclophosphamide
+Neuroblastoma,ACH-000099,1,271.0,271,cyclophosphamide,63.0,63,cyclophosphamide
+Neuroblastoma,ACH-000120,1,270.0,270,cyclophosphamide,93.0,93,cyclophosphamide
+Neuroblastoma,ACH-000136,1,270.0,270,cyclophosphamide,79.0,79,cyclophosphamide
+Neuroblastoma,ACH-000149,1,271.0,271,cyclophosphamide,68.0,68,cyclophosphamide
+Neuroblastoma,ACH-000203,1,271.0,271,cyclophosphamide,75.0,75,cyclophosphamide
+Neuroblastoma,ACH-000227,1,272.0,272,cyclophosphamide,55.0,55,cyclophosphamide
+Neuroblastoma,ACH-000310,1,271.0,271,cyclophosphamide,62.0,62,cyclophosphamide
+Neuroblastoma,ACH-000312,1,270.0,270,cyclophosphamide,95.0,95,cyclophosphamide
+Neuroblastoma,ACH-000341,1,271.0,271,cyclophosphamide,75.0,75,cyclophosphamide
+Neuroblastoma,ACH-000345,1,272.0,272,cyclophosphamide,63.0,63,cyclophosphamide
+Neuroblastoma,ACH-000366,1,271.0,271,cyclophosphamide,99.0,99,cyclophosphamide
+Neuroblastoma,ACH-000446,1,270.0,270,cyclophosphamide,64.0,64,cyclophosphamide
+Neuroblastoma,ACH-000804,1,270.0,270,cyclophosphamide,55.0,55,cyclophosphamide
+Neuroblastoma,ACH-001188,1,270.0,270,cyclophosphamide,72.0,72,cyclophosphamide
+Neuroblastoma,ACH-001300,1,270.0,270,cyclophosphamide,50.0,50,cyclophosphamide
+Neuroblastoma,ACH-001301,1,271.0,271,cyclophosphamide,44.0,44,cyclophosphamide
+Neuroblastoma,ACH-001302,1,274.0,274,cyclophosphamide,80.0,80,cyclophosphamide
+Neuroblastoma,ACH-001303,1,273.0,273,cyclophosphamide,43.0,43,cyclophosphamide
+Neuroblastoma,ACH-001338,1,272.0,272,cyclophosphamide,63.0,63,cyclophosphamide
+Neuroblastoma,ACH-001344,1,271.0,271,cyclophosphamide,58.0,58,cyclophosphamide
+Neuroblastoma,ACH-001354,1,270.0,270,cyclophosphamide,81.0,81,cyclophosphamide
+Neuroblastoma,ACH-001366,1,271.0,271,cyclophosphamide,62.0,62,cyclophosphamide
+Neuroblastoma,ACH-001367,1,273.0,273,cyclophosphamide,124.0,124,cyclophosphamide
+Neuroblastoma,ACH-001548,1,271.0,271,cyclophosphamide,57.0,57,cyclophosphamide
+Neuroblastoma,ACH-001603,1,273.0,273,cyclophosphamide,54.0,54,cyclophosphamide
+Neuroblastoma,ACH-001674,1,272.0,272,cyclophosphamide,38.0,38,cyclophosphamide
+Neuroblastoma,ACH-001716,1,273.0,273,cyclophosphamide,64.0,64,cyclophosphamide
+Neuroblastoma,ACH-002080,1,273.0,273,cyclophosphamide,67.0,67,cyclophosphamide
+Ovarian Cancer,ACH-000001,7,177.0,3,paclitaxel,106.71,3,gemcitabine
+Ovarian Cancer,ACH-000103,7,176.71,2,paclitaxel,99.29,3,gemcitabine
+Ovarian Cancer,ACH-000116,7,177.14,3,paclitaxel,75.29,2,gemcitabine
+Ovarian Cancer,ACH-000256,7,176.86,2,paclitaxel,77.43,3,gemcitabine
+Ovarian Cancer,ACH-000280,7,176.71,3,paclitaxel,57.0,1,gemcitabine
+Ovarian Cancer,ACH-000291,7,176.71,3,paclitaxel,83.0,2,gemcitabine
+Ovarian Cancer,ACH-000333,7,177.14,3,paclitaxel,68.57,2,gemcitabine
+Ovarian Cancer,ACH-000409,7,177.0,2,paclitaxel,99.57,3,gemcitabine
+Ovarian Cancer,ACH-000430,7,176.86,3,paclitaxel,86.29,3,gemcitabine
+Ovarian Cancer,ACH-000443,7,176.71,2,paclitaxel,89.43,3,gemcitabine
+Ovarian Cancer,ACH-000460,7,176.86,3,paclitaxel,91.86,4,gemcitabine
+Ovarian Cancer,ACH-000520,7,177.0,3,paclitaxel,91.43,3,gemcitabine
+Ovarian Cancer,ACH-000527,7,177.0,3,paclitaxel,88.29,3,gemcitabine
+Ovarian Cancer,ACH-000574,7,177.0,3,paclitaxel,69.14,3,gemcitabine
+Ovarian Cancer,ACH-000584,7,177.0,3,paclitaxel,71.0,3,gemcitabine
+Ovarian Cancer,ACH-000608,7,176.43,3,paclitaxel,73.0,3,gemcitabine
+Ovarian Cancer,ACH-000617,7,177.0,3,paclitaxel,68.0,2,gemcitabine
+Ovarian Cancer,ACH-000635,7,177.0,3,paclitaxel,69.0,3,gemcitabine
+Ovarian Cancer,ACH-000646,7,176.86,2,paclitaxel,74.57,2,gemcitabine
+Ovarian Cancer,ACH-000663,7,177.14,3,paclitaxel,65.86,3,gemcitabine
+Ovarian Cancer,ACH-000704,7,177.0,3,paclitaxel,83.43,4,gemcitabine
+Ovarian Cancer,ACH-001048,7,176.57,3,paclitaxel,101.0,2,gemcitabine
+Ovarian Cancer,ACH-001151,7,177.14,3,paclitaxel,66.29,4,gemcitabine
+Ovarian Cancer,ACH-001278,7,177.14,3,paclitaxel,99.43,3,gemcitabine
+Ovarian Cancer,ACH-001279,7,176.43,2,paclitaxel,63.71,2,gemcitabine
+Ovarian Cancer,ACH-001340,7,177.0,3,paclitaxel,94.86,2,gemcitabine
+Ovarian Cancer,ACH-001369,7,177.0,3,paclitaxel,74.43,3,gemcitabine
+Ovarian Cancer,ACH-001370,7,177.14,3,paclitaxel,76.57,2,gemcitabine
+Ovarian Cancer,ACH-001373,7,176.29,3,paclitaxel,67.29,2,gemcitabine
+Ovarian Cancer,ACH-001374,7,176.43,3,paclitaxel,103.0,3,gemcitabine
+Ovarian Cancer,ACH-001403,7,177.0,3,paclitaxel,79.29,4,gemcitabine
+Ovarian Cancer,ACH-001418,7,177.0,3,paclitaxel,79.0,2,gemcitabine
+Ovarian Cancer,ACH-001628,7,177.14,3,paclitaxel,51.29,2,gemcitabine
+Ovarian Cancer,ACH-001630,7,176.43,3,paclitaxel,58.86,2,gemcitabine
+Ovarian Cancer,ACH-001632,7,177.14,3,paclitaxel,66.29,2,gemcitabine
+Ovarian Cancer,ACH-001719,7,177.14,2,paclitaxel,60.86,2,gemcitabine
+Ovarian Cancer,ACH-001991,7,176.29,2,paclitaxel,84.86,5,gemcitabine
+Ovarian Cancer,ACH-002038,7,177.14,3,paclitaxel,76.43,3,gemcitabine
+Pancreatic Cancer,ACH-000031,7,194.0,22,everolimus,179.86,3,gemcitabine
+Pancreatic Cancer,ACH-000085,7,194.0,22,everolimus,246.86,3,gemcitabine
+Pancreatic Cancer,ACH-000093,7,193.71,22,everolimus,254.14,3,gemcitabine
+Pancreatic Cancer,ACH-000094,7,194.0,22,everolimus,237.57,3,gemcitabine
+Pancreatic Cancer,ACH-000114,7,194.14,22,everolimus,245.29,2,gemcitabine
+Pancreatic Cancer,ACH-000164,7,194.0,22,everolimus,190.57,3,gemcitabine
+Pancreatic Cancer,ACH-000213,7,194.0,22,everolimus,194.29,2,gemcitabine
+Pancreatic Cancer,ACH-000222,7,194.0,22,everolimus,239.86,2,gemcitabine
+Pancreatic Cancer,ACH-000320,7,194.0,22,everolimus,263.29,3,gemcitabine
+Pancreatic Cancer,ACH-000347,7,194.57,22,everolimus,239.71,3,gemcitabine
+Pancreatic Cancer,ACH-000354,7,194.0,22,everolimus,182.71,1,gemcitabine
+Pancreatic Cancer,ACH-000933,7,194.0,22,everolimus,203.86,2,gemcitabine
+Pancreatic Cancer,ACH-001098,7,194.0,22,everolimus,233.86,3,gemcitabine
+Pancreatic Cancer,ACH-001353,7,194.0,22,everolimus,234.71,2,gemcitabine
+Pancreatic Cancer,ACH-001375,7,193.86,21,everolimus,236.57,3,gemcitabine
+Pancreatic Cancer,ACH-001376,7,194.0,22,everolimus,207.14,3,gemcitabine
+Pancreatic Cancer,ACH-001377,7,192.29,22,everolimus,245.71,3,gemcitabine
+Pancreatic Cancer,ACH-001378,7,193.71,22,everolimus,245.43,2,gemcitabine
+Pancreatic Cancer,ACH-001379,7,194.0,22,everolimus,247.43,2,gemcitabine
+Pancreatic Cancer,ACH-001380,7,194.0,22,everolimus,199.0,3,gemcitabine
+Pancreatic Cancer,ACH-001382,7,194.0,22,everolimus,262.86,3,gemcitabine
+Pancreatic Cancer,ACH-001999,7,194.0,22,everolimus,172.86,4,gemcitabine
+Pancreatic Cancer,ACH-002039,7,192.86,22,everolimus,209.86,1,gemcitabine
+Pancreatic Cancer,ACH-002672,7,194.0,22,everolimus,256.0,2,gemcitabine
+Prostate Cancer,ACH-000090,5,77.6,2,docetaxel,57.8,3,cabazitaxel
+Prostate Cancer,ACH-000115,5,78.6,3,docetaxel,31.0,3,cabazitaxel
+Prostate Cancer,ACH-000177,5,77.6,2,docetaxel,32.0,2,cabazitaxel
+Prostate Cancer,ACH-000952,5,78.0,3,docetaxel,26.4,2,cabazitaxel
+Prostate Cancer,ACH-000977,5,78.4,3,docetaxel,35.4,5,cabazitaxel
+Prostate Cancer,ACH-001422,5,77.4,2,docetaxel,39.0,3,cabazitaxel
+Prostate Cancer,ACH-001453,5,77.4,2,docetaxel,30.2,2,cabazitaxel
+Prostate Cancer,ACH-001627,5,77.4,2,docetaxel,43.0,3,cabazitaxel
+Prostate Cancer,ACH-001648,5,77.8,3,docetaxel,32.0,2,cabazitaxel
+Prostate Cancer,ACH-001649,5,77.6,2,docetaxel,29.8,3,cabazitaxel
+Sarcoma,ACH-000037,2,101.5,60,vinblastine,168.0,34,vinblastine
+Sarcoma,ACH-000051,2,97.5,50,vinblastine,129.0,25,vinblastine
+Sarcoma,ACH-000054,2,102.0,60,vinblastine,158.0,43,vinblastine
+Sarcoma,ACH-000100,2,100.5,57,vinblastine,89.5,30,vinblastine
+Sarcoma,ACH-000145,2,102.0,60,vinblastine,131.0,47,vinblastine
+Sarcoma,ACH-000169,2,102.0,60,vinblastine,183.5,64,vinblastine
+Sarcoma,ACH-000449,2,102.5,61,vinblastine,175.5,21,vinblastine
+Sarcoma,ACH-000689,2,102.0,60,vinblastine,127.5,35,vinblastine
+Sarcoma,ACH-000772,2,101.5,61,vinblastine,144.5,49,vinblastine
+Sarcoma,ACH-000833,2,100.0,57,vinblastine,194.0,45,vinblastine
+Sarcoma,ACH-000939,2,102.5,61,vinblastine,128.0,34,vinblastine
+Sarcoma,ACH-001050,2,101.5,59,vinblastine,155.5,25,vinblastine
+Sarcoma,ACH-001096,2,102.5,62,vinblastine,155.5,23,vinblastine
+Sarcoma,ACH-001164,2,100.0,57,vinblastine,115.0,23,vinblastine
+Sarcoma,ACH-001184,2,101.0,61,vinblastine,114.5,25,vinblastine
+Sarcoma,ACH-001196,2,100.0,57,vinblastine,119.0,25,vinblastine
+Sarcoma,ACH-001270,2,102.5,61,vinblastine,141.0,26,vinblastine
+Sarcoma,ACH-001274,2,102.0,60,vinblastine,184.0,27,vinblastine
+Sarcoma,ACH-001275,2,102.5,62,vinblastine,134.5,17,vinblastine
+Sarcoma,ACH-001277,2,99.0,59,vinblastine,131.5,49,vinblastine
+Sarcoma,ACH-001280,2,100.5,59,vinblastine,131.0,30,vinblastine
+Sarcoma,ACH-001322,2,103.0,61,vinblastine,149.5,32,vinblastine
+Sarcoma,ACH-001433,2,102.0,60,vinblastine,110.5,30,vinblastine
+Sarcoma,ACH-001702,2,97.0,50,vinblastine,128.0,63,vinblastine
+Sarcoma,ACH-001740,2,104.5,65,vinblastine,117.0,18,vinblastine
+Sarcoma,ACH-001743,2,99.5,56,vinblastine,96.0,28,vinblastine
+Sarcoma,ACH-001745,2,98.0,56,vinblastine,193.0,34,vinblastine
+Sarcoma,ACH-001750,2,99.0,55,vinblastine,114.5,18,vinblastine
+Sarcoma,ACH-001751,2,100.0,58,vinblastine,142.0,17,vinblastine
+Sarcoma,ACH-001765,2,104.0,66,vinblastine,183.0,25,vinblastine
+Sarcoma,ACH-002048,2,98.5,55,vinblastine,137.5,30,vinblastine
+Sarcoma,ACH-002065,2,102.0,60,vinblastine,135.0,25,vinblastine
+Sarcoma,ACH-002066,2,100.5,58,vinblastine,146.5,18,vinblastine
+Sarcoma,ACH-002693,2,102.5,60,vinblastine,115.5,25,vinblastine
+Sarcoma,ACH-002710,2,102.5,60,vinblastine,129.0,20,vinblastine
+Skin Cancer,ACH-000304,6,235.67,113,vindesine,169.5,46,dabrafenib
+Skin Cancer,ACH-000348,6,235.83,113,vindesine,130.33,42,dabrafenib
+Skin Cancer,ACH-000450,6,235.67,113,vindesine,152.83,37,dabrafenib
+Skin Cancer,ACH-000465,6,235.83,113,vindesine,151.17,40,dabrafenib
+Skin Cancer,ACH-000550,6,235.83,113,vindesine,167.5,42,dabrafenib
+Skin Cancer,ACH-000580,6,235.83,113,vindesine,140.83,38,dabrafenib
+Skin Cancer,ACH-000615,6,235.83,113,vindesine,167.17,43,dabrafenib
+Skin Cancer,ACH-000640,6,235.83,113,vindesine,184.67,43,dabrafenib
+Skin Cancer,ACH-000644,6,235.83,113,vindesine,161.0,37,dabrafenib
+Skin Cancer,ACH-000650,6,236.0,113,vindesine,175.33,38,dabrafenib
+Skin Cancer,ACH-000750,6,235.83,113,vindesine,192.5,26,dabrafenib
+Skin Cancer,ACH-000788,6,235.83,113,vindesine,181.83,38,dabrafenib
+Skin Cancer,ACH-000799,6,235.83,113,vindesine,143.33,41,dabrafenib
+Skin Cancer,ACH-000801,6,235.83,113,vindesine,178.5,48,dabrafenib
+Skin Cancer,ACH-000899,6,236.17,113,vindesine,173.83,51,dabrafenib
+Skin Cancer,ACH-000931,6,235.83,113,vindesine,145.17,35,dabrafenib
+Skin Cancer,ACH-001041,6,234.83,112,vindesine,176.33,38,dabrafenib
+Skin Cancer,ACH-001328,6,235.67,113,vindesine,192.83,31,dabrafenib
+Skin Cancer,ACH-001339,6,235.83,113,vindesine,207.0,39,dabrafenib
+Skin Cancer,ACH-001521,6,234.83,113,vindesine,236.33,26,dabrafenib
+Skin Cancer,ACH-001522,6,235.33,113,vindesine,159.0,38,dabrafenib
+Skin Cancer,ACH-001523,6,234.67,112,vindesine,206.67,36,dabrafenib
+Skin Cancer,ACH-001524,6,236.0,113,vindesine,219.33,36,dabrafenib
+Skin Cancer,ACH-001550,6,235.83,113,vindesine,217.83,34,dabrafenib
+Skin Cancer,ACH-001551,6,235.83,113,vindesine,162.17,46,dabrafenib
+Skin Cancer,ACH-001552,6,234.67,112,vindesine,174.67,43,dabrafenib
+Skin Cancer,ACH-001563,6,236.17,113,vindesine,208.5,31,dabrafenib
+Skin Cancer,ACH-001566,6,235.83,113,vindesine,143.83,44,dabrafenib
+Skin Cancer,ACH-001567,6,235.83,113,vindesine,163.33,48,dabrafenib
+Skin Cancer,ACH-001568,6,235.83,113,vindesine,205.83,33,dabrafenib
+Skin Cancer,ACH-001569,6,235.83,113,vindesine,158.0,33,dabrafenib
+Skin Cancer,ACH-001570,6,235.83,113,vindesine,152.5,38,dabrafenib
+Skin Cancer,ACH-001645,6,235.83,113,vindesine,169.67,42,dabrafenib
+Skin Cancer,ACH-001970,6,235.67,113,vindesine,153.33,38,dabrafenib
+Skin Cancer,ACH-001973,6,235.83,113,vindesine,153.67,49,dabrafenib
+Skin Cancer,ACH-001982,6,235.83,113,vindesine,167.83,50,dabrafenib
+Skin Cancer,ACH-002001,6,235.33,113,vindesine,179.83,41,dabrafenib
+Skin Cancer,ACH-002002,6,234.83,113,vindesine,163.5,41,dabrafenib
+Skin Cancer,ACH-002003,6,235.83,113,vindesine,139.0,51,dabrafenib
+Skin Cancer,ACH-002004,6,235.0,113,vindesine,124.0,47,dabrafenib
+Skin Cancer,ACH-002005,6,236.17,113,vindesine,149.17,46,dabrafenib
+Skin Cancer,ACH-002084,6,236.0,113,vindesine,158.83,41,dabrafenib
+Skin Cancer,ACH-002458,6,236.0,113,vindesine,186.17,47,dabrafenib
+Skin Cancer,ACH-002459,6,235.17,113,vindesine,188.83,41,dabrafenib
+Skin Cancer,ACH-002460,6,234.83,112,vindesine,196.17,41,dabrafenib
+Skin Cancer,ACH-002461,6,235.67,113,vindesine,224.5,27,dabrafenib
+Skin Cancer,ACH-002508,6,235.83,113,vindesine,237.83,33,dabrafenib
+Skin Cancer,ACH-002509,6,235.5,113,vindesine,175.83,36,dabrafenib
+Skin Cancer,ACH-002510,6,236.17,115,vindesine,185.0,37,dabrafenib
+Skin Cancer,ACH-002511,6,235.83,113,vindesine,185.0,36,dabrafenib
+Skin Cancer,ACH-002512,6,235.83,113,vindesine,153.17,48,dabrafenib
+Thyroid Cancer,ACH-000058,5,204.8,89,lenvatinib,309.6,140,cinacalcet
+Thyroid Cancer,ACH-000174,5,204.8,89,lenvatinib,284.2,198,cabozantinib
+Thyroid Cancer,ACH-000191,5,204.8,89,lenvatinib,280.2,216,cinacalcet
+Thyroid Cancer,ACH-000456,5,204.8,89,lenvatinib,302.6,247,vandetanib
+Thyroid Cancer,ACH-000716,5,204.6,89,lenvatinib,298.8,231,cinacalcet
+Thyroid Cancer,ACH-000903,5,204.8,89,lenvatinib,293.2,250,vandetanib
+Thyroid Cancer,ACH-001306,5,204.6,89,lenvatinib,287.8,198,cinacalcet
+Thyroid Cancer,ACH-001307,5,204.8,89,lenvatinib,311.2,240,cinacalcet
+Thyroid Cancer,ACH-001321,5,208.0,91,lenvatinib,247.8,155,vandetanib
+Thyroid Cancer,ACH-001356,5,205.0,89,lenvatinib,274.4,225,sorafenib
+Thyroid Cancer,ACH-001384,5,205.2,95,lenvatinib,279.8,200,cinacalcet
+Thyroid Cancer,ACH-001443,5,204.8,89,lenvatinib,273.4,192,vandetanib
+Thyroid Cancer,ACH-001528,5,204.8,89,lenvatinib,274.8,211,cinacalcet
+Thyroid Cancer,ACH-002041,5,204.6,89,lenvatinib,261.4,153,cinacalcet
+Thyroid Cancer,ACH-002042,5,204.8,89,lenvatinib,313.6,215,cinacalcet

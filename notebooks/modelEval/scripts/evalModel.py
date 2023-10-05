@@ -38,8 +38,13 @@ def triplet_loss(y_true, y_pred, alpha=0.1):
     negDist = tf.reduce_mean(tf.square(anchor - negative), axis=1)
     return tf.maximum(posDist - negDist + alpha, 0.)
 
-def countDrugsK(df, k=3):
-    drugCount = {1:{}, 2:{}, 3:{}}
+def countDrugsK(df, k=3, getPcnt=False):
+    drugCount = {}
+    for i in range(k):
+        drugCount[i+1] = {}
+        
+    if getPcnt:
+        drugCount['nCorrect'] = {}
     wrong = []
     for cell, subdf in df.groupby(by='cell_line'):
         sortDF = subdf.sort_values(by='pred', ascending=False).reset_index(drop=True)
@@ -54,6 +59,10 @@ def countDrugsK(df, k=3):
                 for i in drugCount.keys():
                     if i != n:
                         drugCount[i][drug] = 0
+                        
+            if getPcnt & (subdf[subdf.drug == drug].true.sum() == 1):
+                    drugCount['nCorrect'][drug] += 1
+                    
         drug = drugs[0]
 
         if sortDF.iloc[:k, :].true.sum() == 0:
@@ -64,7 +73,10 @@ def countDrugsK(df, k=3):
 #             print(f"\tCell line: {sortDF.loc[0, 'cell_line']}; Top drug: {drug}")
             
     drugCount = pd.DataFrame(drugCount)
-    drugCount['total'] = drugCount[1] + drugCount[2] + drugCount[3]
+    drugCount['total'] = drugCount.sum(axis=1)
+    if getPcnt:
+        drugCount['pcntCorrect'] = drugCount.nCorrect / drugCount.total
+        drugCount.drop('nCorrect', axis=1, inplace=True)
     return drugCount, wrong
 
 
@@ -128,14 +140,17 @@ def clPrecision(preds, modelName=None, thresh=0.5, at=5, getResults=False, verbo
             print(f"\tPrecision@10: {round(np.mean(p0), 4)}\n")
         
     if getResults:
-        return [np.mean(p1), np.mean(p2), np.mean(p3), np.mean(p4), np.mean(p5)]
+        if verbose:
+            return [np.mean(p1), np.mean(p2), np.mean(p3), np.mean(p4), np.mean(p5), np.mean(p0)]
+        else:
+            return [np.mean(p1), np.mean(p2), np.mean(p3), np.mean(p4), np.mean(p5)]
     
     if verbose:
         return thresh
 
-def precision(preds, thresh=0.5, at=5, modelName=None, by='cellLine'):
+def precision(preds, thresh=0.5, at=5, modelName=None, by='cellLine', getResults=False):
     if by == 'cellLine':
-        return clPrecision(preds, modelName, at=at, thresh=thresh)
+        return clPrecision(preds, modelName, at=at, thresh=thresh, getResults=getResults)
     else:
         cancers = {}
         for ct, subdf in preds.groupby(by = 'cancer_type'):
@@ -265,6 +280,8 @@ class evalLogisticModels():
             self.model = GaussianNB()
                 
         self.model.fit(self.train, trainEff)
+        if self.classifier in ['xgb', 'rf']:
+            print(self.model.best_params_)
             
             
     
