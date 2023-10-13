@@ -15,7 +15,7 @@ Project description...
 ## Setup: <a name="setup"></a>
 To being using the model, 
 please create a new conda environment with the necessary dependencies.
-This can be done using the following command:
+This can be done by executing the following command:
 ```bash
 conda env create -f environment.yml
 ```
