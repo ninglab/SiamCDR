@@ -18,6 +18,7 @@ please create a new conda environment with the necessary dependencies.
 This can be done by executing the following command:
 ```bash
 conda env create -f environment.yml
+conda activate SiamCDR
 ```
 
 To enable use of this enviornment in the Jupyter notebooks we provide, please execute the following:
