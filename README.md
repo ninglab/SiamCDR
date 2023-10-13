@@ -22,7 +22,7 @@ conda env create -f environment.yml
 
 To enable use of this enviornment in the Jupyter notebooks we provide, please execute the following:
 ```bash
-python -m ipykernel install --user --name=SiamSDR
+python -m ipykernel install --user --name=siam-cdr
 ```
 
 
