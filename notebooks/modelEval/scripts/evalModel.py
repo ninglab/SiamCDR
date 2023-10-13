@@ -3,42 +3,49 @@ import os
 from re import S
 import numpy as np
 import pandas as pd
-import xgboost as xgb
 
 import tensorflow as tf
 from tensorflow.keras.models import load_model, Model
 from tensorflow.keras.layers import Concatenate, Input
 
 from sklearn.model_selection import GridSearchCV
-from sklearn.naive_bayes import GaussianNB
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import precision_score, recall_score, f1_score, roc_auc_score
 
 from .utils import Predictions, Compiler
 
 #### Define vars
-xgbGrid = {
-    'objective': ['binary:logistic'],
-    'max_depth': [3, 5, 7, 9],
-    'learning_rate': [0.01, 0.05, 0.1]
-}
-rfGrid = {
+rfGrid = { # hyperparameters for RF tuning
     'n_estimators': [10, 25, 50, 100],
     'criterion': ['gini', 'entropy'],
     'min_samples_split': [2, 5, 10]
 }
 
 #### Define Functions
-def triplet_loss(y_true, y_pred, alpha=0.1):
-    anchor, positive, negative = y_pred[:, :8],\
-                                 y_pred[:, 8:2*8],\
-                                 y_pred[:, 2*8:]
-    posDist = tf.reduce_mean(tf.square(anchor - positive), axis=1)
-    negDist = tf.reduce_mean(tf.square(anchor - negative), axis=1)
-    return tf.maximum(posDist - negDist + alpha, 0.)
-
 def countDrugsK(df, k=3, getPcnt=False):
+    '''
+    Function aimed at counting the number of effective drugs 
+    ranked by a model within the top k
+    ---------------------------
+    Params:
+    ------
+    df (pandas dataframe): has columns cell_line, drug, true, pred
+    k (int): number of drugs to look at
+    getPcnt (bool): whether the %-age of true effective drugs should added to drugCount DF
+    
+    Output:
+    drugCount (pandas df): has columns (i) matching the number of k, total (and pcntCorrect)
+                           index (j) is drug name (only drugs predicted among top-k).
+                           value at each (i,j) for i = 1 to k is the number of times the drug 
+                           was recommended at that rank for distinct cell lines. 
+                           'total' is the number of times the drug was rec'd in the top.
+                           'pcntCorrect': is % of the time the drug was recommended 
+                           and was truly effective.
+    wrong (list): list of cell lines for which the model fails to predict 
+                  a true effective drug in the top-k.
+    -----
+
+    '''
     drugCount = {}
     for i in range(k):
         drugCount[i+1] = {}
@@ -98,7 +105,7 @@ def getPredDist(df):
     print(f"Avg varaince of predictions for each drug: {round(predDist[predDist.predCount>1].variance.mean(), 4)}")
     return predDist
 
-
+# get cell line precision
 def clPrecision(preds, modelName=None, thresh=0.5, at=5, getResults=False, verbose=True):
     p1 = []
     p2 = []
@@ -137,7 +144,8 @@ def clPrecision(preds, modelName=None, thresh=0.5, at=5, getResults=False, verbo
             print(f"\tPrecision@3: {round(np.mean(p3), 4)}")
             print(f"\tPrecision@4: {round(np.mean(p4), 4)}")
             print(f"\tPrecision@5: {round(np.mean(p5), 4)}")
-            print(f"\tPrecision@10: {round(np.mean(p0), 4)}\n")
+            if nEff >= 10:
+                print(f"\tPrecision@10: {round(np.mean(p0), 4)}\n")
         
     if getResults:
         if verbose:
@@ -147,7 +155,9 @@ def clPrecision(preds, modelName=None, thresh=0.5, at=5, getResults=False, verbo
     
     if verbose:
         return thresh
+    
 
+# Get the cancer type precision
 def precision(preds, thresh=0.5, at=5, modelName=None, by='cellLine', getResults=False):
     if by == 'cellLine':
         return clPrecision(preds, modelName, at=at, thresh=thresh, getResults=getResults)
@@ -246,47 +256,43 @@ class evalFullModel():
             
 class evalLogisticModels():
     def __init__(self, train, trainEff, test, new=None, alt='logistic',
-                 fusionPath=None, drugPath=None, rnaPath=None):
+                 drugPath=None, rnaPath=None):
         
         self.classifier = alt
         self.drugInputDim = 256
         self.rnaInputDim = 463
         
         if drugPath != None:
-            self.drugEncoder = self.loadEncoder(drugPath, 'drug')
+            self.drugEncoder = self._loadEncoder(drugPath, 'drug')
         else:
             self.drugEncoder = None
             
         if rnaPath != None:
-            self.rnaEncoder = self.loadEncoder(rnaPath, 'rna')
+            self.rnaEncoder = self._loadEncoder(rnaPath, 'rna')
         else:
             self.rnaEncoder = None
             
-        self.fusionEncoder = self.getEncoder(fusionPath)
-        self.train = self.fusionEncoder(train).numpy()
-        self.test = self.fusionEncoder(test).numpy()
+        self.pairEncoder = self._getEncoder()
+        self.train = self.pairEncoder(train).numpy()
+        self.test = self.pairEncoder(test).numpy()
         if new != None:
-            self.new = self.fusionEncoder(new).numpy()
+            self.new = self.pairEncoder(new).numpy()
         
         if self.classifier == 'logistic':
             self.model = LogisticRegression()
-        elif self.classifier == 'xgb':
-            self.model = GridSearchCV(estimator = xgb.XGBClassifier(),
-                                  param_grid = xgbGrid)
+
         elif self.classifier == 'rf':
             self.model = GridSearchCV(estimator = RandomForestClassifier(),
                                       param_grid = rfGrid)
-        elif self.classifier == 'nb':
-            self.model = GaussianNB()
                 
         self.model.fit(self.train, trainEff)
-        if self.classifier in ['xgb', 'rf']:
+        if self.classifier in ['rf']:
             print(self.model.best_params_)
             
             
     
     @staticmethod
-    def loadEncoder(path, which='rna'):
+    def _loadEncoder(path, which='rna'):
         try:
             snn = load_model(path)
             encoder = snn.get_layer('model')
@@ -294,8 +300,9 @@ class evalLogisticModels():
             return encoder
         except AttributeError:
             return None
-                                          
-    def getEncoder(self, fusionPath):
+
+    @staticmethod                            
+    def _getEncoder(self):
         # Define encoded drug input
         drugInput = Input(self.drugInputDim)
         rnaInput = Input(self.rnaInputDim)
@@ -313,11 +320,6 @@ class evalLogisticModels():
             else: 
                 rnaEmbed = self.rnaEncoder(rnaInput)
                 pairEmbed = Concatenate()([drugEmbed, rnaEmbed])
-
-        if fusionPath != None:
-            fusionEncoder = load_model(fusionPath, custom_objects={'triplet_loss':triplet_loss})
-            fusionEncoder = fusionEncoder.get_layer('model')
-            pairEmbed = fusionEncoder(pairEmbed)
 
         return Model(inputs=[drugInput, rnaInput], outputs=pairEmbed)
                                              
