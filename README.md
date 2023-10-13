@@ -39,7 +39,31 @@ The code used to implement the experiements published in our manuscrpt is availa
 
 
 ## Citing: <a name="cite"></a>
+Our manuscript is currently under review at _Nature Communications_.
 
+<!---
+If you find this method useful in your research, please cite it using the following BibTex entry:
+```
+@article{lawrence_ad1_2023,
+  title = {},
+  journal = {},
+  month = {},
+  year = {2023},
+  doi = {},
+  author = {Lawrence, P. and Burns B. and Ning, X.},
+}
+```
+-->
+
+If you use any part of this library in your research, please cite it using the following BibTex entry:
+```
+@online{codeSiamCDR2023,
+  title = {SiamCDR library for enhancing learned drug and cell line representations for cancer drug response via contrastive learning},
+  author = {Lawrence, P. and Ning, X.},
+  url = {https://github.com/ninglab/SiamCDR},
+  year = {2023},
+}
+```
 
 ## Credits and contact information: <a name="contact"></a>
 This implementation of `SiamCDR` was written by Patrick J. Lawrence with contributiuons by Xia Ning, PhD.
