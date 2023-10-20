@@ -1,0 +1,129 @@
+# SiamCDR
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+
+![alt text](architecture.png)
+
+Project description...
+
+## Table of Contents:
+- [Setup](#setup)
+- [Use model](#use)
+- [Train model](#train)
+- [Evaluate model](#eval)
+- [Citing](#cite)
+- [Credits and contact information](#contact)
+- [Copyright and license notice](#license)
+
+## Setup: <a name="setup"></a>
+To being using the model, 
+please create a new conda environment with the necessary dependencies.
+This can be done by executing the following command:
+```bash
+conda env create -f environment.yml
+conda activate SiamCDR
+```
+
+To enable use of this enviornment in the Jupyter notebooks we provide, please execute the following:
+```bash
+python -m ipykernel install --user --name=siam-cdr
+```
+
+## Use model: <a name="use"></a>
+We find the best version of SiamCDR to be a random forest (RF) classifer applied to the concatenation of both drug and cell line embeddings.
+Our top performing model can be loaded using the following python commands:
+
+```python
+import tensorflow as tf
+import joblib
+
+
+```
+
+After loading, you can obtain predictions over drug-cell line pairs with the following python commands:
+```python
+import pandas as pd
+
+
+```
+
+The model can also be evaulated over new data if desired using the following python pseudocode:
+
+```python
+# Import pandas if you haven't already
+import pandas as pd
+
+```
+
+
+However, in order for the model to work (without re-training), the following conditions must be met:
+  - New cell lines must contain gene expression data for all of the genes
+  - Drug input must be 256-bit Morgan fingerprints
+
+Cell line expression data can be filtered with the following
+
+
+
+## Train model: <a name="train"></a>
+The processed data used to train and evaluate our model is available in `data/processed` directory.
+
+
+**To train the drug and cell line encoders:** 
+
+
+```python
+
+```
+Note that if you wish to train the drug and cell line encoders over new data, it is recommended to hyperparameter tune the model to the new data.
+
+**To train the RF classifier:** 
+
+```python
+from sklearn. import RF
+
+```
+
+
+Note that if you wish to train the model over new data, it is recommended to hyperparameter tune each component (drug encoder, cell line encoder, and RF).
+
+## Evaluate model: <a name="eval"></a>
+The code used to implement the experiements we present in our manuscrpt is available in [`notebooks/experiments`](notebooks/experiments).
+
+## Citing: <a name="cite"></a>
+Our manuscript is currently under review at _Nature Communications_.
+
+If you find this method useful in your research, please cite it using the following BibTex entry:
+```
+@article{lawrence_ad1_2023,
+  title = {Enhancing drug and cell line representations via contrastive learning for improved anti-cancer drug prioritization},
+  journal = {Preprint},
+  month = {Oct},
+  year = {2023},
+  doi = {},
+  author = {Lawrence, P. and Ning, X.},
+}
+```
+
+If you use any part of this library in your research, please cite it using the following BibTex entry:
+```
+@online{codeSiamCDR2023,
+  title = {SiamCDR library for enhancing learned drug and cell line representations for cancer drug response via contrastive learning},
+  author = {Lawrence, P. and Ning, X.},
+  url = {https://github.com/ninglab/SiamCDR},
+  year = {2023},
+}
+```
+
+## Credits and contact information: <a name="contact"></a>
+This implementation of `SiamCDR` was written by Patrick J. Lawrence with contributiuons by Xia Ning, PhD.
+If you have any questions or encounter a problem, 
+please contact <a href='mailto:patrick.skillman-lawrence@osumc.edu'>Patrick J. Lawrence</a>
+
+## Copyright and license notice: <a name="license"></a>
+Copyright 2023, The Ohio State University
+
+We gratefully acknowledge support by National Science Foundation grant no. IIS-2133650.
+
+Licensed under the [GNU GENERAL PUBLIC LICENSE, version 3.0](LICENSE). You may not use this library except in compliance with the License.
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+

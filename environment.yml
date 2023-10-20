@@ -26,11 +26,11 @@ dependencies:
   - brotlipy=0.7.0=py38h9ed2024_1003
   - bzip2=1.0.8=h0d85af4_4
   - c-ares=1.20.1=h10d778d_0
-  - ca-certificates=2023.08.22=hecd8cb5_0
+  - ca-certificates=2023.7.22=h8857fd0_0
   - cached-property=1.5.2=hd8ed1ab_1
   - cached_property=1.5.2=pyha770c72_1
   - cachetools=5.3.1=pyhd8ed1ab_0
-  - certifi=2023.7.22=py38hecd8cb5_0
+  - certifi=2023.7.22=pyhd8ed1ab_0
   - cffi=1.15.1=py38h6c40b1e_3
   - charset-normalizer=2.0.4=pyhd3eb1b0_0
   - click=8.1.7=unix_pyh707e725_0
@@ -59,6 +59,7 @@ dependencies:
   - idna=3.4=py38hecd8cb5_0
   - importlib-metadata=6.8.0=pyha770c72_0
   - importlib-resources=6.1.0=pyhd8ed1ab_0
+  - importlib_metadata=6.8.0=hd8ed1ab_0
   - importlib_resources=6.1.0=pyhd8ed1ab_0
   - ipykernel=5.3.4=py38h5ca1d4c_0
   - ipython=8.12.2=py38hecd8cb5_0
@@ -97,6 +98,7 @@ dependencies:
   - liblapack=3.9.0=18_osx64_openblas
   - liblapacke=3.9.0=18_osx64_openblas
   - libllvm10=10.0.1=h009f743_3
+  - libllvm14=14.0.6=h5b596cc_1
   - libnghttp2=1.51.0=h0dd9d14_0
   - libopenblas=0.3.24=openmp_h48a4ad5_0
   - libpng=1.6.39=ha978bb4_0
@@ -109,7 +111,7 @@ dependencies:
   - libxcb=1.13=h0d85af4_1004
   - libzlib=1.2.13=h8a1eda9_5
   - llvm-openmp=17.0.2=hff08bdf_0
-  - llvmlite=0.36.0=py38h872f124_0
+  - llvmlite=0.40.0=py38hfff2838_0
   - markdown=3.5=pyhd8ed1ab_0
   - markupsafe=2.1.3=py38hcafd530_1
   - matplotlib-base=3.7.1=py38hcb346ec_0
@@ -122,14 +124,14 @@ dependencies:
   - ncurses=6.4=hcec6c5f_0
   - nest-asyncio=1.5.6=py38hecd8cb5_0
   - notebook=6.3.0=py38h50d1736_0
-  - numba=0.53.1=py38hb2f4e1b_0
+  - numba=0.57.0=py38h3ea8b11_0
   - numexpr=2.8.4=py38h57a7bef_1
   - numpy=1.24.3=py38h57a7bef_0
   - numpy-base=1.24.3=py38hc93c6d9_0
   - oauthlib=3.2.2=pyhd8ed1ab_0
   - openblas=0.3.24=openmp_hd7704e8_0
   - openjpeg=2.5.0=h13ac156_2
-  - openssl=1.1.1w=hca72f7f_0
+  - openssl=1.1.1w=h8a1eda9_0
   - opt_einsum=3.3.0=pyhc1e730c_2
   - packaging=23.1=py38hecd8cb5_0
   - pandas=1.5.3=py38h07fba90_0
@@ -188,7 +190,7 @@ dependencies:
   - sqlite=3.41.2=h6c40b1e_0
   - stack_data=0.2.0=pyhd3eb1b0_0
   - statsmodels=0.14.0=py38h7092abf_2
-  - tbb=2020.2=h940c156_4
+  - tbb=2021.8.0=ha357a0b_0
   - tensorboard=2.8.0=pyhd8ed1ab_1
   - tensorboard-data-server=0.6.1=py38ha6c3189_4
   - tensorboard-plugin-wit=1.8.1=pyhd8ed1ab_0
